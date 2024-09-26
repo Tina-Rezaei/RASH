@@ -1,0 +1,27 @@
+decision making time: 0.070037841796875 
+decision making time: 0.039942264556884766 
+decision making time: 0.04541921615600586 
+decision making time: 0.04195404052734375 
+naive postponing required. total required computation by local tasks is lower than available computational resources. 
+naive postponing required. total required computation by local tasks is lower than available computational resources. 
+naive postponing required. total required computation by local tasks is lower than available computational resources. 
+naive postponing required. total required computation by local tasks is lower than available computational resources. 
+naive postponing required. total required computation by local tasks is lower than available computational resources. 
+naive postponing required. total required computation by local tasks is lower than available computational resources. 
+naive postponing required. total required computation by local tasks is lower than available computational resources. 
+decision making time: 0.03989219665527344 
+decision making time: 0.03966021537780762 
+decision making time: 0.040700435638427734 
+decision making time: 5.050258159637451 
+decision making time: 0.09190702438354492 
+naive postponing required. total required computation by local tasks is lower than available computational resources. 
+naive postponing required. total required computation by local tasks is lower than available computational resources. 
+naive postponing required. total required computation by local tasks is lower than available computational resources. 
+naive postponing required. total required computation by local tasks is lower than available computational resources. 
+naive postponing required. total required computation by local tasks is lower than available computational resources. 
+naive postponing required. total required computation by local tasks is lower than available computational resources. 
+naive postponing required. total required computation by local tasks is lower than available computational resources. 
+naive postponing required. total required computation by local tasks is lower than available computational resources. 
+naive postponing required. total required computation by local tasks is lower than available computational resources. 
+naive postponing required. total required computation by local tasks is lower than available computational resources. 
+naive postponing required. total required computation by local tasks is lower than available computational resources. 

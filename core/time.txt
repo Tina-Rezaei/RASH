@@ -1,0 +1,691 @@
+34878.890917778015s, iterations 1, simulation run time: 240000(s)
+5089.412476062775s, iterations 1, simulation run time: 240000
+2370.8005332946777s, iterations 1, simulation run time: 240000
+4438.695428848267s, iterations 100, simulation run time: 180000
+4821.948972940445s, iterations 100, simulation run time: 120000
+3228.9677329063416s, iterations 100, simulation run time: 120000
+2641.14982008934s, iterations 100, simulation run time: 120000
+2576.158365011215s, iterations 100, simulation run time: 120000
+2836.0406053066254s, iterations 100, simulation run time: 120000
+5654.461663722992s, iterations 100, simulation run time: 120000
+3183.8264441490173s, iterations 100, simulation run time: 120000
+4902.604079008102s, iterations 100, simulation run time: 120000
+3310.5933895111084s, iterations 100, simulation run time: 120000
+3096.8286271095276s, iterations 100, simulation run time: 120000
+7212.5401265621185s, iterations 100, simulation run time: 120000
+3968.2066082954407s, iterations 100, simulation run time: 120000
+4031.188324689865s, iterations 100, simulation run time: 120000
+8776.991438865662s, iterations 100, simulation run time: 120000
+5218.547176122665s, iterations 100, simulation run time: 120000
+3883.929569721222s, iterations 100, simulation run time: 120000
+3302.403393507004s, iterations 100, simulation run time: 120000
+4686.882981300354s, iterations 100, simulation run time: 120000
+4288.836736679077s, iterations 100, simulation run time: 120000
+3684.7623856067657s, iterations 100, simulation run time: 120000
+4874.866107463837s, iterations 100, simulation run time: 120000
+3636.4173209667206s, iterations 100, simulation run time: 120000
+3842.3309099674225s, iterations 100, simulation run time: 120000
+6727.458854913712s, iterations 100, simulation run time: 120000
+3961.0263724327087s, iterations 100, simulation run time: 120000
+4003.8841857910156s, iterations 100, simulation run time: 120000
+5487.107580900192s, iterations 100, simulation run time: 120000
+5190.401418209076s, iterations 100, simulation run time: 120000
+3903.652270078659s, iterations 100, simulation run time: 120000
+3260.956970691681s, iterations 100, simulation run time: 120000
+4448.16727232933s, iterations 100, simulation run time: 120000
+3515.537234067917s, iterations 100, simulation run time: 120000
+4719.758675575256s, iterations 100, simulation run time: 120000
+3390.5557918548584s, iterations 100, simulation run time: 120000
+3595.825339078903s, iterations 100, simulation run time: 120000
+3459.479695081711s, iterations 100, simulation run time: 120000
+2974.78728723526s, iterations 100, simulation run time: 120000
+4456.016203403473s, iterations 100, simulation run time: 120000
+4681.854903936386s, iterations 100, simulation run time: 120000
+3984.3557493686676s, iterations 100, simulation run time: 120000
+4067.7526273727417s, iterations 100, simulation run time: 120000
+4462.326900005341s, iterations 11, simulation run time: 120000
+4899.81635761261s, iterations 11, simulation run time: 120000
+4278.513112545013s, iterations 11, simulation run time: 120000
+4665.98908829689s, iterations 11, simulation run time: 120000
+3726.306075811386s, iterations 11, simulation run time: 120000
+2630.511126756668s, iterations 11, simulation run time: 120000
+4288.958873271942s, iterations 11, simulation run time: 120000
+5031.411175251007s, iterations 11, simulation run time: 120000
+5360.739626646042s, iterations 11, simulation run time: 120000
+4831.305347919464s, iterations 11, simulation run time: 120000
+3477.4639801979065s, iterations 11, simulation run time: 120000
+4819.885126590729s, iterations 11, simulation run time: 120000
+4900.851933002472s, iterations 11, simulation run time: 120000
+4288.423446655273s, iterations 11, simulation run time: 120000
+4432.023979663849s, iterations 11, simulation run time: 120000
+3841.785142660141s, iterations 11, simulation run time: 120000
+2690.2744851112366s, iterations 11, simulation run time: 120000
+4379.291462182999s, iterations 11, simulation run time: 120000
+4958.6914937496185s, iterations 11, simulation run time: 120000
+5379.795213222504s, iterations 11, simulation run time: 120000
+4773.339209079742s, iterations 11, simulation run time: 120000
+3097.089434146881s, iterations 11, simulation run time: 120000
+3396.435573577881s, iterations 11, simulation run time: 120000
+3146.5992560386658s, iterations 11, simulation run time: 120000
+3872.685400724411s, iterations 11, simulation run time: 120000
+3185.052745103836s, iterations 11, simulation run time: 120000
+7269.160539627075s, iterations 11, simulation run time: 120000
+3172.102199077606s, iterations 11, simulation run time: 120000
+3992.6669704914093s, iterations 11, simulation run time: 120000
+3586.1192038059235s, iterations 11, simulation run time: 120000
+2603.3540589809418s, iterations 11, simulation run time: 120000
+3738.8652050495148s, iterations 11, simulation run time: 120000
+3317.5440516471863s, iterations 11, simulation run time: 120000
+2713.924716234207s, iterations 11, simulation run time: 120000
+4198.479461669922s, iterations 11, simulation run time: 120000
+4458.702198266983s, iterations 11, simulation run time: 120000
+3760.051320552826s, iterations 11, simulation run time: 120000
+2591.78404045105s, iterations 11, simulation run time: 120000
+2756.808832883835s, iterations 11, simulation run time: 120000
+3440.845429420471s, iterations 11, simulation run time: 120000
+3082.4175868034363s, iterations 11, simulation run time: 120000
+4061.9796998500824s, iterations 11, simulation run time: 120000
+3088.736827850342s, iterations 11, simulation run time: 120000
+5457.010438919067s, iterations 11, simulation run time: 120000
+3129.159428358078s, iterations 11, simulation run time: 120000
+3565.255031347275s, iterations 11, simulation run time: 120000
+3020.792397737503s, iterations 11, simulation run time: 120000
+4510.4175527095795s, iterations 11, simulation run time: 120000
+4004.4484643936157s, iterations 11, simulation run time: 120000
+4436.374350309372s, iterations 11, simulation run time: 120000
+6421.730672121048s, iterations 11, simulation run time: 120000
+6498.544130563736s, iterations 11, simulation run time: 120000
+3595.7625913619995s, iterations 11, simulation run time: 120000
+3705.690512418747s, iterations 11, simulation run time: 120000
+5351.815426111221s, iterations 11, simulation run time: 120000
+4900.38266992569s, iterations 11, simulation run time: 120000
+3522.606184720993s, iterations 11, simulation run time: 120000
+3260.696273088455s, iterations 11, simulation run time: 120000
+4617.708392381668s, iterations 11, simulation run time: 120000
+2810.291344642639s, iterations 11, simulation run time: 120000
+4413.077495098114s, iterations 11, simulation run time: 120000
+3824.6422667503357s, iterations 11, simulation run time: 120000
+3736.945182800293s, iterations 11, simulation run time: 120000
+5108.121438741684s, iterations 11, simulation run time: 120000
+6054.486493349075s, iterations 11, simulation run time: 120000
+4950.0425000190735s, iterations 11, simulation run time: 120000
+5242.432808160782s, iterations 11, simulation run time: 120000
+3849.7255096435547s, iterations 50, simulation run time: 120000
+2496.8113033771515s, iterations 50, simulation run time: 120000
+2326.019951105118s, iterations 50, simulation run time: 120000
+2362.3471636772156s, iterations 50, simulation run time: 120000
+5222.5257296562195s, iterations 50, simulation run time: 120000
+13294.688203334808s, criticality 0.3, iteration 10, simulation run time: 120000
+3036.4940667152405s, criticality 0.3, iteration 11, simulation run time: 120000
+4097.907284736633s, criticality 0.3, iteration 12, simulation run time: 120000
+3313.6380021572113s, criticality 0.3, iteration 13, simulation run time: 120000
+2503.2126820087433s, criticality 0.3, iteration 14, simulation run time: 120000
+3959.5396478176117s, criticality 0.3, iteration 15, simulation run time: 120000
+3230.6634414196014s, criticality 0.3, iteration 16, simulation run time: 120000
+3973.1785006523132s, criticality 0.3, iteration 17, simulation run time: 120000
+3015.319007873535s, criticality 0.3, iteration 18, simulation run time: 120000
+3389.9597239494324s, criticality 0.3, iteration 19, simulation run time: 120000
+3253.8161776065826s, criticality 0.3, iteration 20, simulation run time: 120000
+2832.7725274562836s, criticality 0.3, iteration 21, simulation run time: 120000
+3176.8155875205994s, criticality 0.3, iteration 22, simulation run time: 120000
+3712.759312391281s, criticality 0.3, iteration 23, simulation run time: 120000
+3034.531478881836s, criticality 0.3, iteration 24, simulation run time: 120000
+3013.0917332172394s, criticality 0.3, iteration 25, simulation run time: 120000
+3269.1894869804382s, criticality 0.3, iteration 26, simulation run time: 120000
+2861.148111343384s, criticality 0.3, iteration 27, simulation run time: 120000
+3460.942147731781s, criticality 0.3, iteration 28, simulation run time: 120000
+3665.833422899246s, criticality 0.3, iteration 29, simulation run time: 120000
+3258.7285826206207s, criticality 0.3, iteration 30, simulation run time: 120000
+3134.5653114318848s, criticality 0.3, iteration 31, simulation run time: 120000
+3111.991661787033s, criticality 0.3, iteration 32, simulation run time: 120000
+4876.3929669857025s, criticality 0.3, iteration 33, simulation run time: 120000
+3549.232112646103s, criticality 0.3, iteration 34, simulation run time: 120000
+6533.929441452026s, criticality 0.3, iteration 35, simulation run time: 120000
+3340.9965324401855s, criticality 0.3, iteration 36, simulation run time: 120000
+3391.617218732834s, criticality 0.3, iteration 37, simulation run time: 120000
+3098.68963098526s, criticality 0.3, iteration 38, simulation run time: 120000
+5323.186410903931s, criticality 0.3, iteration 39, simulation run time: 120000
+3060.223101377487s, criticality 0.3, iteration 40, simulation run time: 120000
+5651.182425498962s, criticality 0.3, iteration 41, simulation run time: 120000
+3424.674656152725s, criticality 0.3, iteration 42, simulation run time: 120000
+3846.536640882492s, criticality 0.3, iteration 43, simulation run time: 120000
+2698.519070625305s, criticality 0.3, iteration 44, simulation run time: 120000
+3791.681725025177s, criticality 0.3, iteration 10, simulation run time: 120000
+2738.120096206665s, criticality 0.3, iteration 11, simulation run time: 120000
+3113.803508043289s, criticality 0.3, iteration 12, simulation run time: 120000
+3063.082551717758s, criticality 0.3, iteration 13, simulation run time: 120000
+2611.262006998062s, criticality 0.3, iteration 14, simulation run time: 120000
+3361.9567551612854s, criticality 0.3, iteration 15, simulation run time: 120000
+2922.573150396347s, criticality 0.3, iteration 16, simulation run time: 120000
+2740.8970551490784s, criticality 0.3, iteration 17, simulation run time: 120000
+3050.8259148597717s, criticality 0.3, iteration 18, simulation run time: 120000
+3309.433564186096s, criticality 0.3, iteration 19, simulation run time: 120000
+3220.839396238327s, criticality 0.3, iteration 20, simulation run time: 120000
+2660.561507701874s, criticality 0.3, iteration 21, simulation run time: 120000
+2862.682537317276s, criticality 0.3, iteration 22, simulation run time: 120000
+2850.80655002594s, criticality 0.3, iteration 23, simulation run time: 120000
+2832.5749390125275s, criticality 0.3, iteration 24, simulation run time: 120000
+2715.793727874756s, criticality 0.3, iteration 25, simulation run time: 120000
+2539.1061310768127s, criticality 0.3, iteration 26, simulation run time: 120000
+2623.0967330932617s, criticality 0.3, iteration 27, simulation run time: 120000
+3119.9042406082153s, criticality 0.3, iteration 28, simulation run time: 120000
+2953.490991830826s, criticality 0.3, iteration 29, simulation run time: 120000
+2773.7629973888397s, criticality 0.3, iteration 30, simulation run time: 120000
+2757.1841266155243s, criticality 0.3, iteration 31, simulation run time: 120000
+2686.9917590618134s, criticality 0.3, iteration 32, simulation run time: 120000
+3619.675274848938s, criticality 0.3, iteration 33, simulation run time: 120000
+2746.4820935726166s, criticality 0.3, iteration 34, simulation run time: 120000
+5082.379378080368s, criticality 0.5, iteration 0, simulation run time: 120000
+6109.668560504913s, criticality 0.5, iteration 1, simulation run time: 120000
+4504.834852933884s, criticality 0.5, iteration 2, simulation run time: 120000
+4399.166724920273s, criticality 0.5, iteration 3, simulation run time: 120000
+3949.7592051029205s, criticality 0.5, iteration 4, simulation run time: 120000
+3810.7327556610107s, criticality 0.5, iteration 5, simulation run time: 120000
+4218.6713972091675s, criticality 0.5, iteration 6, simulation run time: 120000
+3952.084095478058s, criticality 0.5, iteration 7, simulation run time: 120000
+3943.940310239792s, criticality 0.5, iteration 8, simulation run time: 120000
+4115.277644872665s, criticality 0.5, iteration 9, simulation run time: 120000
+3345.9387295246124s, criticality 0.5, iteration 10, simulation run time: 120000
+3942.0587136745453s, criticality 0.5, iteration 11, simulation run time: 120000
+3357.5804018974304s, criticality 0.5, iteration 12, simulation run time: 120000
+3402.450821876526s, criticality 0.5, iteration 13, simulation run time: 120000
+3425.002550840378s, criticality 0.5, iteration 14, simulation run time: 120000
+3733.3634264469147s, criticality 0.5, iteration 15, simulation run time: 120000
+3800.316692352295s, criticality 0.5, iteration 16, simulation run time: 120000
+4012.7006957530975s, criticality 0.5, iteration 17, simulation run time: 120000
+3433.9523820877075s, criticality 0.5, iteration 18, simulation run time: 120000
+3216.336308479309s, criticality 0.5, iteration 19, simulation run time: 120000
+13022.380165576935s, criticality 0.5, iteration 20, simulation run time: 120000
+2978.35888504982s, criticality 0.5, iteration 21, simulation run time: 120000
+3000.52125787735s, criticality 0.5, iteration 22, simulation run time: 120000
+6745.97913646698s, criticality 0.5, iteration 23, simulation run time: 120000
+4611.134353637695s, criticality 0.5, iteration 24, simulation run time: 120000
+3349.7788066864014s, criticality 0.5, iteration 25, simulation run time: 120000
+3907.278378725052s, criticality 0.5, iteration 26, simulation run time: 120000
+3596.640543937683s, criticality 0.5, iteration 27, simulation run time: 120000
+3885.0528178215027s, criticality 0.5, iteration 28, simulation run time: 120000
+6190.8593871593475s, criticality 0.5, iteration 29, simulation run time: 120000
+4868.101483821869s, criticality 0.5, iteration 30, simulation run time: 120000
+3617.7911715507507s, criticality 0.5, iteration 31, simulation run time: 120000
+4549.254737138748s, criticality 0.5, iteration 32, simulation run time: 120000
+4466.325286388397s, criticality 0.5, iteration 33, simulation run time: 120000
+3675.047130584717s, criticality 0.5, iteration 34, simulation run time: 120000
+3410.867338180542s, criticality 0.5, iteration 35, simulation run time: 120000
+5954.066537857056s, criticality 0.5, iteration 36, simulation run time: 120000
+2364.804771900177s, criticality 0.5, iteration 1, simulation run time: 120000
+3808.02006649971s, criticality 0.5, iteration 2, simulation run time: 120000
+10052.760281085968s, criticality 0.5, iteration 3, simulation run time: 120000
+4654.336797237396s, criticality 0.5, iteration 4, simulation run time: 120000
+1339.3635749816895s, criticality 0.5, iteration 5, simulation run time: 120000
+2077.6218869686127s, criticality 0.5, iteration 6, simulation run time: 120000
+4904.060460805893s, criticality 0.5, iteration 7, simulation run time: 120000
+3095.4361639022827s, criticality 0.5, iteration 1, simulation run time: 120000
+4374.010582923889s, criticality 0.5, iteration 2, simulation run time: 120000
+3701.804851293564s, criticality 0.5, iteration 3, simulation run time: 120000
+3148.058224916458s, criticality 0.5, iteration 4, simulation run time: 120000
+3309.745544910431s, criticality 0.5, iteration 5, simulation run time: 120000
+2414.5878088474274s, criticality 0.5, iteration 6, simulation run time: 120000
+5092.761757612228s, criticality 0.5, iteration 7, simulation run time: 120000
+2733.517420768738s, criticality 0.5, iteration 8, simulation run time: 120000
+1479.539575099945s, criticality 0.5, iteration 9, simulation run time: 120000
+3353.834461450577s, criticality 0.5, iteration 10, simulation run time: 120000
+3607.649227142334s, criticality 0.5, iteration 11, simulation run time: 120000
+3257.4161002635956s, criticality 0.3, iteration 10, simulation run time: 120000
+1385.3521349430084s, criticality 0.3, iteration 11, simulation run time: 120000
+2257.1803617477417s, criticality 0.3, iteration 12, simulation run time: 120000
+3039.103173494339s, criticality 0.3, iteration 13, simulation run time: 120000
+966.2727074623108s, criticality 0.3, iteration 14, simulation run time: 120000
+3524.103319644928s, criticality 0.3, iteration 15, simulation run time: 120000
+4514.417820215225s, criticality 0.3, iteration 16, simulation run time: 120000
+2403.5628926754s, criticality 0.3, iteration 17, simulation run time: 120000
+904.7877638339996s, criticality 0.3, iteration 18, simulation run time: 120000
+2053.5481328964233s, criticality 0.3, iteration 19, simulation run time: 120000
+6746.246752500534s, criticality 0.3, iteration 20, simulation run time: 120000
+1098.3167896270752s, criticality 0.3, iteration 21, simulation run time: 120000
+1668.198790550232s, criticality 0.3, iteration 22, simulation run time: 120000
+3005.5290138721466s, criticality 0.3, iteration 23, simulation run time: 120000
+1809.6300835609436s, criticality 0.3, iteration 24, simulation run time: 120000
+1333.3146858215332s, criticality 0.3, iteration 25, simulation run time: 120000
+1025.4578742980957s, criticality 0.3, iteration 26, simulation run time: 120000
+615.94664478302s, criticality 0.3, iteration 27, simulation run time: 120000
+3766.418963432312s, criticality 0.3, iteration 10, simulation run time: 120000
+2950.4296844005585s, criticality 0.3, iteration 11, simulation run time: 120000
+4112.489941358566s, criticality 0.3, iteration 12, simulation run time: 120000
+
+
+5900.791620254517s, criticality 0.3, iteration 0, simulation run time: 120000
+3912.8585166931152s, criticality 0.3, iteration 1, simulation run time: 120000
+5506.310548782349s, criticality 0.3, iteration 2, simulation run time: 120000
+5873.970042705536s, criticality 0.3, iteration 3, simulation run time: 120000
+2120.3942403793335s, criticality 0.3, iteration 4, simulation run time: 120000
+4391.590221643448s, criticality 0.3, iteration 5, simulation run time: 120000
+9090.070740938187s, criticality 0.3, iteration 6, simulation run time: 120000
+7516.463449954987s, criticality 0.3, iteration 7, simulation run time: 120000
+5398.156030654907s, criticality 0.3, iteration 8, simulation run time: 120000
+5336.433996677399s, criticality 0.3, iteration 9, simulation run time: 120000
+9731.989988327026s, criticality 0.3, iteration 10, simulation run time: 120000
+2590.832264661789s, criticality 0.3, iteration 11, simulation run time: 120000
+6469.495844602585s, criticality 0.3, iteration 12, simulation run time: 120000
+7769.825974225998s, criticality 0.3, iteration 13, simulation run time: 120000
+4001.9167218208313s, criticality 0.3, iteration 14, simulation run time: 120000
+3967.0532903671265s, criticality 0.3, iteration 15, simulation run time: 120000
+4182.5919713974s, criticality 0.3, iteration 16, simulation run time: 120000
+1878.3618540763855s, criticality 0.3, iteration 17, simulation run time: 120000
+27567.43364572525s, criticality 0.3, iteration 0, simulation run time: 120000
+3141.6418030261993s, criticality 0.3, iteration 1, simulation run time: 120000
+7577.666480064392s, criticality 0.3, iteration 2, simulation run time: 120000
+13844.281541347504s, criticality 0.3, iteration 3, simulation run time: 120000
+3665.653971672058s, criticality 0.3, iteration 4, simulation run time: 120000
+11241.642653465271s, criticality 0.5, iteration 0, simulation run time: 120000
+3871.2594842910767s, criticality 0.3, iteration 34, simulation run time: 120000
+3665.7633817195892s, criticality 0.3, iteration 35, simulation run time: 120000
+2617.0810174942017s, criticality 0.3, iteration 36, simulation run time: 120000
+2544.071093559265s, criticality 0.3, iteration 37, simulation run time: 120000
+6889.183564186096s, criticality 0.3, iteration 38, simulation run time: 120000
+3538.078814268112s, criticality 0.3, iteration 39, simulation run time: 120000
+7189.430325269699s, criticality 0.3, iteration 40, simulation run time: 120000
+3833.5362906455994s, criticality 0.3, iteration 41, simulation run time: 120000
+4600.898869514465s, criticality 0.3, iteration 45, simulation run time: 120000
+
+21113.887507915497s, criticality 0.3, iteration 0, simulation run time: 120000
+5221.238858938217s, criticality 0.3, iteration 2, simulation run time: 120000
+9556.671811580658s, criticality 0.3, iteration 3, simulation run time: 120000
+4151.6226415634155s, criticality 0.3, iteration 5, simulation run time: 120000
+3026.3192501068115s, criticality 0.3, iteration 5, simulation run time: 120000
+1537.860065460205s, criticality 0.3, iteration 0, simulation run time: 60000
+1283.775006055832s, criticality 0.3, iteration 1, simulation run time: 60000
+1338.3669819831848s, criticality 0.3, iteration 2, simulation run time: 60000
+3328.230706214905s, criticality 0.3, iteration 3, simulation run time: 60000
+2707.5655188560486s, criticality 0.3, iteration 4, simulation run time: 60000
+1307.5945024490356s, criticality 0.3, iteration 5, simulation run time: 60000
+1580.4962558746338s, criticality 0.3, iteration 6, simulation run time: 60000
+2223.6212282180786s, criticality 0.3, iteration 7, simulation run time: 60000
+2904.9770381450653s, criticality 0.3, iteration 8, simulation run time: 60000
+2494.937883377075s, criticality 0.3, iteration 9, simulation run time: 60000
+1388.6551616191864s, criticality 0.3, iteration 10, simulation run time: 60000
+1493.783317565918s, criticality 0.3, iteration 11, simulation run time: 60000
+3451.7064442634583s, criticality 0.3, iteration 12, simulation run time: 60000
+1859.085711479187s, criticality 0.3, iteration 13, simulation run time: 60000
+2182.3308413028717s, criticality 0.3, iteration 14, simulation run time: 60000
+1960.28786110878s, criticality 0.3, iteration 15, simulation run time: 60000
+15852.520239591599s, criticality 0.3, iteration 16, simulation run time: 60000
+8614.709272623062s, criticality 0.3, iteration 17, simulation run time: 60000
+1251.8662340641022s, criticality 0.3, iteration 21, simulation run time: 60000
+1186.9561982154846s, criticality 0.3, iteration 1, simulation run time: 50000
+961.9904315471649s, criticality 0.3, iteration 5, simulation run time: 50000
+1279.8860890865326s, criticality 0.3, iteration 6, simulation run time: 50000
+2739.761273622513s, criticality 0.3, iteration 0, simulation run time: 50000
+2400.961479663849s, criticality 0.3, iteration 1, simulation run time: 50000
+2487.8804471492767s, criticality 0.3, iteration 2, simulation run time: 50000
+2012.1881728172302s, criticality 0.3, iteration 3, simulation run time: 50000
+6015.890683174133s, criticality 0.3, iteration 4, simulation run time: 50000
+11707.880180597305s, criticality 0.3, iteration 5, simulation run time: 50000
+2571.842315196991s, criticality 0.3, iteration 6, simulation run time: 50000
+2879.948293209076s, criticality 0.3, iteration 7, simulation run time: 50000
+6020.08234000206s, criticality 0.3, iteration 8, simulation run time: 50000
+4125.043744325638s, criticality 0.3, iteration 9, simulation run time: 50000
+4865.176456689835s, criticality 0.3, iteration 10, simulation run time: 50000
+4218.911555767059s, criticality 0.3, iteration 11, simulation run time: 50000
+3814.4168434143066s, criticality 0.3, iteration 12, simulation run time: 50000
+4121.508094072342s, criticality 0.3, iteration 13, simulation run time: 50000
+5404.015956401825s, criticality 0.3, iteration 14, simulation run time: 50000
+4591.016942024231s, criticality 0.3, iteration 15, simulation run time: 50000
+5086.447447061539s, criticality 0.3, iteration 16, simulation run time: 50000
+5329.238939285278s, criticality 0.3, iteration 17, simulation run time: 50000
+4999.814631938934s, criticality 0.3, iteration 18, simulation run time: 50000
+5813.579702138901s, criticality 0.3, iteration 19, simulation run time: 50000
+4501.065809726715s, criticality 0.5, iteration 0, simulation run time: 120000
+15465.7031519413s, criticality 0.5, iteration 1, simulation run time: 120000
+4616.409602642059s, criticality 0.5, iteration 3, simulation run time: 120000
+3113.7772505283356s, criticality 0.5, iteration 4, simulation run time: 120000
+4619.9856498241425s, criticality 0.5, iteration 5, simulation run time: 120000
+5671.86385846138s, criticality 0.5, iteration 6, simulation run time: 120000
+3587.9068899154663s, criticality 0.5, iteration 7, simulation run time: 120000
+5020.298231840134s, criticality 0.5, iteration 8, simulation run time: 120000
+3849.042078256607s, criticality 0.5, iteration 9, simulation run time: 120000
+2787.8967270851135s, criticality 0.5, iteration 0, simulation run time: 120000
+2686.0004377365112s, criticality 0.5, iteration 1, simulation run time: 120000
+5643.349294185638s, criticality 0.5, iteration 2, simulation run time: 120000
+3974.200847387314s, criticality 0.5, iteration 3, simulation run time: 120000
+9099.977536439896s, criticality 0.5, iteration 4, simulation run time: 120000
+5362.499039649963s, criticality 0.5, iteration 5, simulation run time: 120000
+2642.748127222061s, criticality 0.5, iteration 7, simulation run time: 120000
+8323.709647417068s, criticality 0.5, iteration 6, simulation run time: 120000
+826.6265687942505s, criticality 0.5, iteration 0, simulation run time: 120000
+3297.1531512737274s, criticality 0.5, iteration 1, simulation run time: 120000
+1924.4793546199799s, criticality 0.5, iteration 2, simulation run time: 120000
+958.1407144069672s, criticality 0.5, iteration 3, simulation run time: 120000
+2548.469485282898s, criticality 0.5, iteration 4, simulation run time: 120000
+1441.4158651828766s, criticality 0.5, iteration 5, simulation run time: 120000
+1613.3546612262726s, criticality 0.5, iteration 6, simulation run time: 120000
+7964.561767578125s, criticality 0.5, iteration 0, simulation run time: 120000
+10036.25737118721s, criticality 0.5, iteration 1, simulation run time: 120000
+2926.4619419574738s, criticality 0.5, iteration 2, simulation run time: 120000
+12711.26182794571s, criticality 0.5, iteration 3, simulation run time: 120000
+4855.688656330109s, criticality 0.5, iteration 4, simulation run time: 120000
+7349.0811314582825s, criticality 0.5, iteration 5, simulation run time: 120000
+6065.316997528076s, criticality 0.5, iteration 6, simulation run time: 120000
+8587.433760881424s, criticality 0.5, iteration 7, simulation run time: 120000
+3210.4479994773865s, criticality 0.5, iteration 8, simulation run time: 120000
+3395.7021989822388s, criticality 0.5, iteration 9, simulation run time: 120000
+5908.966619253159s, criticality 0.5, iteration 10, simulation run time: 120000
+4562.663630723953s, criticality 0.5, iteration 11, simulation run time: 120000
+5830.873614311218s, criticality 0.5, iteration 12, simulation run time: 120000
+2697.6920671463013s, criticality 0.5, iteration 0, simulation run time: 120000
+4176.603045463562s, criticality 0.5, iteration 1, simulation run time: 120000
+712.9491832256317s, criticality 0.5, iteration 2, simulation run time: 120000
+4681.290243387222s, criticality 0.5, iteration 3, simulation run time: 120000
+2966.4712586402893s, criticality 0.5, iteration 4, simulation run time: 120000
+2510.9854078292847s, criticality 0.5, iteration 5, simulation run time: 120000
+4018.574147939682s, criticality 0.5, iteration 6, simulation run time: 120000
+4732.690078735352s, criticality 0.5, iteration 7, simulation run time: 120000
+3495.867695569992s, criticality 0.5, iteration 8, simulation run time: 120000
+1199.018167257309s, criticality 0.5, iteration 9, simulation run time: 120000
+3954.7721655368805s, criticality 0.5, iteration 10, simulation run time: 120000
+1059.9146649837494s, criticality 0.5, iteration 11, simulation run time: 120000
+4583.5984625816345s, criticality 0.5, iteration 12, simulation run time: 120000
+8601.351431131363s, criticality 0.5, iteration 0, simulation run time: 120000
+9708.987473249435s, criticality 0.5, iteration 1, simulation run time: 120000
+3899.469668865204s, criticality 0.5, iteration 2, simulation run time: 120000
+22381.102734804153s, criticality 0.5, iteration 3, simulation run time: 120000
+12784.540927886963s, criticality 0.5, iteration 4, simulation run time: 120000
+24627.578634500504s, criticality 0.5, iteration 5, simulation run time: 120000
+5865.905673265457s, criticality 0.5, iteration 6, simulation run time: 120000
+5037.401378154755s, criticality 0.5, iteration 7, simulation run time: 120000
+6861.601808547974s, criticality 0.5, iteration 8, simulation run time: 120000
+4495.633661746979s, criticality 0.5, iteration 9, simulation run time: 120000
+23558.621556043625s, criticality 0.5, iteration 10, simulation run time: 120000
+4469.776617765427s, criticality 0.5, iteration 11, simulation run time: 120000
+26037.44488310814s, criticality 0.5, iteration 12, simulation run time: 120000
+5685.763055801392s, criticality 0.5, iteration 0, simulation run time: 120000
+6339.697637081146s, criticality 0.5, iteration 0, simulation run time: 120000
+6952.980391740799s, criticality 0.5, iteration 1, simulation run time: 120000
+3751.4084424972534s, criticality 0.5, iteration 2, simulation run time: 120000
+7390.892672777176s, criticality 0.5, iteration 0, simulation run time: 120000
+9762.431934833527s, criticality 0.5, iteration 1, simulation run time: 120000
+3123.198229789734s, criticality 0.5, iteration 2, simulation run time: 120000
+6088.975077629089s, criticality 0.5, iteration 13, simulation run time: 120000
+2411.992518186569s, criticality 0.5, iteration 14, simulation run time: 120000
+4577.102080345154s, criticality 0.5, iteration 15, simulation run time: 120000
+6019.145593166351s, criticality 0.5, iteration 16, simulation run time: 120000
+4753.481034040451s, criticality 0.5, iteration 17, simulation run time: 120000
+4894.192254304886s, criticality 0.5, iteration 18, simulation run time: 120000
+5635.341483831406s, criticality 0.5, iteration 19, simulation run time: 120000
+5741.32705950737s, criticality 0.5, iteration 20, simulation run time: 120000
+8949.56442809105s, criticality 0.5, iteration 21, simulation run time: 120000
+6812.7661216259s, criticality 0.5, iteration 22, simulation run time: 120000
+15482.540371656418s, criticality 0.5, iteration 23, simulation run time: 120000
+5152.893743276596s, criticality 0.5, iteration 24, simulation run time: 120000
+5335.951610326767s, criticality 0.5, iteration 25, simulation run time: 120000
+16300.271962404251s, criticality 0.5, iteration 26, simulation run time: 120000
+7308.822055578232s, criticality 0.5, iteration 27, simulation run time: 120000
+4342.339861392975s, criticality 0.5, iteration 28, simulation run time: 120000
+4613.495642662048s, criticality 0.5, iteration 29, simulation run time: 120000
+3375.33207654953s, criticality 0.5, iteration 30, simulation run time: 120000
+4475.4854600429535s, criticality 0.5, iteration 31, simulation run time: 120000
+9581.811236858368s, criticality 0.5, iteration 32, simulation run time: 120000
+4021.191351413727s, criticality 0.5, iteration 33, simulation run time: 120000
+2892.3929035663605s, criticality 0.5, iteration 34, simulation run time: 120000
+6945.001881599426s, criticality 0.5, iteration 35, simulation run time: 120000
+6346.662713527679s, criticality 0.5, iteration 36, simulation run time: 120000
+6264.668998479843s, criticality 0.5, iteration 37, simulation run time: 120000
+7731.852449417114s, criticality 0.5, iteration 38, simulation run time: 120000
+18851.813670158386s, criticality 0.5, iteration 39, simulation run time: 120000
+4877.796629905701s, criticality 0.5, iteration 13, simulation run time: 120000
+972.4391543865204s, criticality 0.5, iteration 14, simulation run time: 120000
+1901.1461267471313s, criticality 0.5, iteration 15, simulation run time: 120000
+2834.751277923584s, criticality 0.5, iteration 16, simulation run time: 120000
+1840.2103426456451s, criticality 0.5, iteration 17, simulation run time: 120000
+3696.040887594223s, criticality 0.5, iteration 18, simulation run time: 120000
+3579.6507847309113s, criticality 0.5, iteration 19, simulation run time: 120000
+1608.0387856960297s, criticality 0.5, iteration 20, simulation run time: 120000
+1732.4741549491882s, criticality 0.5, iteration 21, simulation run time: 120000
+3412.7007257938385s, criticality 0.5, iteration 22, simulation run time: 120000
+4284.1673703193665s, criticality 0.5, iteration 23, simulation run time: 120000
+2307.7752945423126s, criticality 0.5, iteration 24, simulation run time: 120000
+1893.1668236255646s, criticality 0.5, iteration 25, simulation run time: 120000
+2706.8498907089233s, criticality 0.5, iteration 26, simulation run time: 120000
+3138.2378194332123s, criticality 0.5, iteration 27, simulation run time: 120000
+2138.4247493743896s, criticality 0.5, iteration 28, simulation run time: 120000
+2058.7900216579437s, criticality 0.5, iteration 29, simulation run time: 120000
+1465.4275398254395s, criticality 0.5, iteration 30, simulation run time: 120000
+1159.7409868240356s, criticality 0.5, iteration 31, simulation run time: 120000
+2515.4524354934692s, criticality 0.5, iteration 32, simulation run time: 120000
+697.0611526966095s, criticality 0.5, iteration 33, simulation run time: 120000
+1034.2299344539642s, criticality 0.5, iteration 34, simulation run time: 120000
+977.081062078476s, criticality 0.5, iteration 35, simulation run time: 120000
+2307.1824386119843s, criticality 0.5, iteration 36, simulation run time: 120000
+2834.213037967682s, criticality 0.5, iteration 37, simulation run time: 120000
+3041.804849386215s, criticality 0.5, iteration 38, simulation run time: 120000
+4087.1390373706818s, criticality 0.5, iteration 39, simulation run time: 120000
+7770.110149145126s, criticality 0.3, iteration 0, simulation run time: 120000
+9049.24580836296s, criticality 0.3, iteration 1, simulation run time: 120000
+3101.9013092517853s, criticality 0.3, iteration 2, simulation run time: 120000
+14526.200356721878s, criticality 0.3, iteration 3, simulation run time: 120000
+4710.213578462601s, criticality 0.3, iteration 4, simulation run time: 120000
+9640.281245946884s, criticality 0.3, iteration 5, simulation run time: 120000
+4907.316252231598s, criticality 0.3, iteration 6, simulation run time: 120000
+12580.521343946457s, criticality 0.3, iteration 7, simulation run time: 120000
+3443.458641767502s, criticality 0.3, iteration 8, simulation run time: 120000
+3839.7210409641266s, criticality 0.3, iteration 9, simulation run time: 120000
+17569.808892011642s, criticality 0.5, iteration 3, simulation run time: 120000
+5051.0889275074005s, criticality 0.5, iteration 4, simulation run time: 120000
+10261.645406723022s, criticality 0.5, iteration 5, simulation run time: 120000
+5920.61224770546s, criticality 0.5, iteration 6, simulation run time: 120000
+11449.351378440857s, criticality 0.5, iteration 7, simulation run time: 120000
+3979.675193309784s, criticality 0.5, iteration 8, simulation run time: 120000
+3705.6960577964783s, criticality 0.5, iteration 9, simulation run time: 120000
+14081.346951961517s, criticality 0.5, iteration 10, simulation run time: 120000
+8295.048485040665s, criticality 0.7, iteration 0, simulation run time: 120000
+9023.525131464005s, criticality 0.7, iteration 1, simulation run time: 120000
+3038.735676765442s, criticality 0.7, iteration 2, simulation run time: 120000
+13281.842480421066s, criticality 0.7, iteration 3, simulation run time: 120000
+3928.3460216522217s, criticality 0.7, iteration 4, simulation run time: 120000
+10607.27301955223s, criticality 0.7, iteration 5, simulation run time: 120000
+6483.7915461063385s, criticality 0.7, iteration 6, simulation run time: 120000
+5130.2000522613525s, criticality 0.7, iteration 0, simulation run time: 120000
+5014.61770939827s, criticality 0.7, iteration 1, simulation run time: 120000
+3037.912355184555s, criticality 0.7, iteration 2, simulation run time: 120000
+9181.971030712128s, criticality 0.7, iteration 3, simulation run time: 120000
+13197.884372472763s, criticality 0.7, iteration 4, simulation run time: 120000
+2727.691088914871s, criticality 0.7, iteration 5, simulation run time: 120000
+7507.007215499878s, criticality 0.7, iteration 6, simulation run time: 120000
+2662.6336166858673s, criticality 0.7, iteration 7, simulation run time: 120000
+3829.733938217163s, criticality 0.7, iteration 8, simulation run time: 120000
+3903.6431291103363s, criticality 0.7, iteration 9, simulation run time: 120000
+8348.379868268967s, criticality 0.7, iteration 10, simulation run time: 120000
+5567.628177165985s, criticality 0.7, iteration 11, simulation run time: 120000
+3615.6634016036987s, criticality 0.7, iteration 12, simulation run time: 120000
+2639.1756258010864s, criticality 0.7, iteration 13, simulation run time: 120000
+1184.4154403209686s, criticality 0.7, iteration 10, simulation run time: 60000
+1162.7045922279358s, criticality 0.7, iteration 10, simulation run time: 60000
+1174.55628490448s, criticality 0.7, iteration 11, simulation run time: 60000
+1164.4592921733856s, criticality 0.7, iteration 12, simulation run time: 60000
+1149.7204592227936s, criticality 0.7, iteration 0, simulation run time: 60000
+1204.3690209388733s, criticality 0.7, iteration 1, simulation run time: 60000
+1170.0521459579468s, criticality 0.7, iteration 2, simulation run time: 60000
+1213.8364984989166s, criticality 0.7, iteration 3, simulation run time: 60000
+1163.3319749832153s, criticality 0.7, iteration 4, simulation run time: 60000
+1202.1843090057373s, criticality 0.7, iteration 5, simulation run time: 60000
+1199.410269498825s, criticality 0.7, iteration 6, simulation run time: 60000
+1143.8112003803253s, criticality 0.7, iteration 0, simulation run time: 60000
+1150.3654794692993s, criticality 0.7, iteration 1, simulation run time: 60000
+1144.9011054039001s, criticality 0.7, iteration 2, simulation run time: 60000
+1148.8507323265076s, criticality 0.7, iteration 3, simulation run time: 60000
+1147.1756088733673s, criticality 0.7, iteration 4, simulation run time: 60000
+1134.3645713329315s, criticality 0.7, iteration 5, simulation run time: 60000
+1122.5127143859863s, criticality 0.7, iteration 6, simulation run time: 60000
+1154.9117200374603s, criticality 0.7, iteration 7, simulation run time: 60000
+1139.570606470108s, criticality 0.7, iteration 8, simulation run time: 60000
+1121.5199406147003s, criticality 0.7, iteration 9, simulation run time: 60000
+1141.196320772171s, criticality 0.7, iteration 10, simulation run time: 60000
+1122.316799402237s, criticality 0.7, iteration 11, simulation run time: 60000
+1159.7928833961487s, criticality 0.7, iteration 12, simulation run time: 60000
+1134.7420942783356s, criticality 0.7, iteration 13, simulation run time: 60000
+1145.771805524826s, criticality 0.7, iteration 14, simulation run time: 60000
+1132.5203275680542s, criticality 0.7, iteration 15, simulation run time: 60000
+1160.9869158267975s, criticality 0.7, iteration 16, simulation run time: 60000
+1166.8374843597412s, criticality 0.7, iteration 0, simulation run time: 60000
+1161.0955429077148s, criticality 0.7, iteration 0, simulation run time: 60000
+1158.930097579956s, criticality 0.7, iteration 1, simulation run time: 60000
+1160.0141906738281s, criticality 0.7, iteration 2, simulation run time: 60000
+1189.981782913208s, criticality 0.7, iteration 3, simulation run time: 60000
+1193.2612574100494s, criticality 0.7, iteration 4, simulation run time: 60000
+1179.3409523963928s, criticality 0.7, iteration 5, simulation run time: 60000
+1162.4522161483765s, criticality 0.7, iteration 6, simulation run time: 60000
+1157.9027588367462s, criticality 0.7, iteration 7, simulation run time: 60000
+1154.462857723236s, criticality 0.7, iteration 8, simulation run time: 60000
+1162.7653307914734s, criticality 0.7, iteration 9, simulation run time: 60000
+1200.1593763828278s, criticality 0.7, iteration 10, simulation run time: 60000
+1717.8123533725739s, criticality 0.7, iteration 0, simulation run time: 60000
+1329.5179121494293s, criticality 0.7, iteration 1, simulation run time: 60000
+1245.595651626587s, criticality 0.7, iteration 2, simulation run time: 60000
+1545.1949005126953s, criticality 0.7, iteration 3, simulation run time: 60000
+1678.317650794983s, criticality 0.7, iteration 4, simulation run time: 60000
+1486.1062707901s, criticality 0.7, iteration 5, simulation run time: 60000
+1167.1081619262695s, criticality 0.7, iteration 6, simulation run time: 60000
+1502.0844161510468s, criticality 0.7, iteration 7, simulation run time: 60000
+1330.1290488243103s, criticality 0.7, iteration 8, simulation run time: 60000
+1308.7753307819366s, criticality 0.7, iteration 9, simulation run time: 60000
+1375.4189541339874s, criticality 0.7, iteration 0, simulation run time: 60000
+1782.162624835968s, criticality 0.7, iteration 1, simulation run time: 60000
+1600.0439503192902s, criticality 0.7, iteration 2, simulation run time: 60000
+1303.3447601795197s, criticality 0.7, iteration 3, simulation run time: 60000
+1510.1548023223877s, criticality 0.7, iteration 4, simulation run time: 60000
+2284.976487159729s, criticality 0.7, iteration 5, simulation run time: 60000
+1236.3533005714417s, criticality 0.7, iteration 6, simulation run time: 60000
+1376.7901375293732s, criticality 0.7, iteration 7, simulation run time: 60000
+1484.3006007671356s, criticality 0.7, iteration 8, simulation run time: 60000
+1384.0710380077362s, criticality 0.7, iteration 9, simulation run time: 60000
+6842.530992507935s, criticality 0.7, iteration 0, simulation run time: 60000
+4866.997386932373s, criticality 0.7, iteration 1, simulation run time: 60000
+5650.670657157898s, criticality 0.7, iteration 2, simulation run time: 60000
+7684.498599529266s, criticality 0.7, iteration 3, simulation run time: 60000
+4649.469515800476s, criticality 0.7, iteration 4, simulation run time: 60000
+5700.545371055603s, criticality 0.7, iteration 5, simulation run time: 60000
+4883.758243560791s, criticality 0.7, iteration 6, simulation run time: 60000
+5600.227214097977s, criticality 0.7, iteration 7, simulation run time: 60000
+7385.221904993057s, criticality 0.7, iteration 8, simulation run time: 60000
+6385.959782600403s, criticality 0.7, iteration 9, simulation run time: 60000
+10878.181777000427s, criticality 0.7, iteration 10, simulation run time: 60000
+4777.586666584015s, criticality 0.7, iteration 11, simulation run time: 60000
+4929.191546916962s, criticality 0.7, iteration 10, simulation run time: 60000
+7667.776770353317s, criticality 0.7, iteration 11, simulation run time: 60000
+2939.570351600647s, criticality 0.7, iteration 12, simulation run time: 60000
+2263.835559129715s, criticality 0.7, iteration 13, simulation run time: 60000
+3138.141140460968s, criticality 0.7, iteration 14, simulation run time: 60000
+4966.096106290817s, criticality 0.7, iteration 15, simulation run time: 60000
+11157.829199075699s, criticality 0.7, iteration 10, simulation run time: 60000
+11702.797600269318s, criticality 0.7, iteration 11, simulation run time: 60000
+34336.389719963074s, criticality 0.7, iteration 13, simulation run time: 60000
+1325.6429076194763s, criticality 0.7, iteration 10, simulation run time: 60000
+2102.3257536888123s, criticality 0.7, iteration 11, simulation run time: 60000
+1209.4695370197296s, criticality 0.7, iteration 12, simulation run time: 60000
+1187.6083192825317s, criticality 0.7, iteration 13, simulation run time: 60000
+1544.0459418296814s, criticality 0.7, iteration 14, simulation run time: 60000
+2180.47598361969s, criticality 0.7, iteration 15, simulation run time: 60000
+1414.8860731124878s, criticality 0.7, iteration 20, simulation run time: 60000
+1351.6076345443726s, criticality 0.7, iteration 0, simulation run time: 60000
+1429.8971502780914s, criticality 0.7, iteration 0, simulation run time: 60000
+1187.5296607017517s, criticality 0.7, iteration 1, simulation run time: 60000
+1162.9250946044922s, criticality 0.7, iteration 2, simulation run time: 60000
+1455.8801727294922s, criticality 0.7, iteration 0, simulation run time: 60000
+1185.0038995742798s, criticality 0.7, iteration 1, simulation run time: 60000
+1171.4999830722809s, criticality 0.7, iteration 2, simulation run time: 60000
+1240.7962555885315s, criticality 0.7, iteration 3, simulation run time: 60000
+1387.0041790008545s, criticality 0.7, iteration 4, simulation run time: 60000
+1271.1004750728607s, criticality 0.7, iteration 5, simulation run time: 60000
+1204.8012073040009s, criticality 0.7, iteration 6, simulation run time: 60000
+1369.8961381912231s, criticality 0.7, iteration 7, simulation run time: 60000
+1223.7492654323578s, criticality 0.7, iteration 8, simulation run time: 60000
+1290.5749778747559s, criticality 0.7, iteration 9, simulation run time: 60000
+1473.8671071529388s, criticality 0.7, iteration 0, simulation run time: 60000
+1209.6258630752563s, criticality 0.7, iteration 1, simulation run time: 60000
+1213.5800561904907s, criticality 0.7, iteration 2, simulation run time: 60000
+1224.3560645580292s, criticality 0.7, iteration 3, simulation run time: 60000
+1340.5185761451721s, criticality 0.7, iteration 4, simulation run time: 60000
+1253.3235602378845s, criticality 0.7, iteration 5, simulation run time: 60000
+1174.4849014282227s, criticality 0.7, iteration 6, simulation run time: 60000
+1373.793348789215s, criticality 0.7, iteration 7, simulation run time: 60000
+1212.0153980255127s, criticality 0.7, iteration 8, simulation run time: 60000
+1289.5849010944366s, criticality 0.7, iteration 9, simulation run time: 60000
+1457.9739439487457s, criticality 0.7, iteration 0, simulation run time: 60000
+2255.9311244487762s, criticality 0.7, iteration 1, simulation run time: 60000
+1300.2475521564484s, criticality 0.7, iteration 2, simulation run time: 60000
+1449.486623764038s, criticality 0.7, iteration 3, simulation run time: 60000
+1732.6585314273834s, criticality 0.7, iteration 0, simulation run time: 60000
+1370.1546092033386s, criticality 0.7, iteration 1, simulation run time: 60000
+1289.4760930538177s, criticality 0.7, iteration 2, simulation run time: 60000
+1768.8447296619415s, criticality 0.7, iteration 0, simulation run time: 60000
+1374.6544098854065s, criticality 0.7, iteration 1, simulation run time: 60000
+1296.7086155414581s, criticality 0.7, iteration 2, simulation run time: 60000
+1591.291944026947s, criticality 0.7, iteration 3, simulation run time: 60000
+1767.669199705124s, criticality 0.7, iteration 4, simulation run time: 60000
+1563.062809228897s, criticality 0.7, iteration 5, simulation run time: 60000
+1201.3386754989624s, criticality 0.7, iteration 6, simulation run time: 60000
+1546.9209308624268s, criticality 0.7, iteration 7, simulation run time: 60000
+1380.2565960884094s, criticality 0.7, iteration 8, simulation run time: 60000
+1353.991975069046s, criticality 0.7, iteration 9, simulation run time: 60000
+1447.9772474765778s, criticality 0.7, iteration 0, simulation run time: 60000
+1831.551689863205s, criticality 0.7, iteration 1, simulation run time: 60000
+1615.925623178482s, criticality 0.7, iteration 2, simulation run time: 60000
+1499.565812587738s, criticality 0.7, iteration 3, simulation run time: 60000
+1625.1823556423187s, criticality 0.7, iteration 4, simulation run time: 60000
+2543.43089056015s, criticality 0.7, iteration 5, simulation run time: 60000
+1201.236783504486s, criticality 0.7, iteration 6, simulation run time: 60000
+1350.6627926826477s, criticality 0.7, iteration 7, simulation run time: 60000
+1519.860770702362s, criticality 0.7, iteration 8, simulation run time: 60000
+1366.1689360141754s, criticality 0.7, iteration 9, simulation run time: 60000
+18468.24164366722s, criticality 0.7, iteration 0, simulation run time: 60000
+1.1901366710662842s, criticality 0.7, iteration 0, simulation run time: 60000
+1.6049039363861084s, criticality 0.7, iteration 1, simulation run time: 60000
+1.2316715717315674s, criticality 0.7, iteration 0, simulation run time: 60000
+1.7626309394836426s, criticality 0.7, iteration 1, simulation run time: 60000
+2.0300891399383545s, criticality 0.7, iteration 2, simulation run time: 60000
+1.2818217277526855s, criticality 0.7, iteration 3, simulation run time: 60000
+1.0882275104522705s, criticality 0.7, iteration 4, simulation run time: 60000
+1.3251752853393555s, criticality 0.7, iteration 5, simulation run time: 60000
+2.304506778717041s, criticality 0.7, iteration 6, simulation run time: 60000
+1.2099697589874268s, criticality 0.7, iteration 7, simulation run time: 60000
+1.2978482246398926s, criticality 0.7, iteration 8, simulation run time: 60000
+1.01871657371521s, criticality 0.7, iteration 9, simulation run time: 60000
+2.139630079269409s, criticality 0.7, iteration 0, simulation run time: 60000
+1.320603609085083s, criticality 0.7, iteration 0, simulation run time: 60000
+1.8670248985290527s, criticality 0.7, iteration 1, simulation run time: 60000
+1.365710973739624s, criticality 0.7, iteration 0, simulation run time: 60000
+1.969374418258667s, criticality 0.7, iteration 1, simulation run time: 60000
+2.2496328353881836s, criticality 0.7, iteration 2, simulation run time: 60000
+1.3889124393463135s, criticality 0.7, iteration 3, simulation run time: 60000
+1.195777416229248s, criticality 0.7, iteration 4, simulation run time: 60000
+1.4850904941558838s, criticality 0.7, iteration 5, simulation run time: 60000
+2.5591421127319336s, criticality 0.7, iteration 6, simulation run time: 60000
+1.2426352500915527s, criticality 0.7, iteration 7, simulation run time: 60000
+1.377490758895874s, criticality 0.7, iteration 8, simulation run time: 60000
+1.0261054039001465s, criticality 0.7, iteration 9, simulation run time: 60000
+2.3980069160461426s, criticality 0.7, iteration 0, simulation run time: 60000
+3.748568296432495s, criticality 0.7, iteration 1, simulation run time: 60000
+1.9619061946868896s, criticality 0.7, iteration 2, simulation run time: 60000
+3.065584897994995s, criticality 0.7, iteration 3, simulation run time: 60000
+1.746917724609375s, criticality 0.7, iteration 4, simulation run time: 60000
+2.035224199295044s, criticality 0.7, iteration 5, simulation run time: 60000
+1.4433255195617676s, criticality 0.7, iteration 0, simulation run time: 60000
+1.4754314422607422s, criticality 0.7, iteration 0, simulation run time: 60000
+2.154613971710205s, criticality 0.7, iteration 1, simulation run time: 60000
+1.5522122383117676s, criticality 0.7, iteration 0, simulation run time: 60000
+1.6000590324401855s, criticality 0.7, iteration 0, simulation run time: 60000
+659.8055527210236s, criticality 0.7, iteration 0, simulation run time: 60000
+524.1828758716583s, criticality 0.7, iteration 1, simulation run time: 60000
+518.5188338756561s, criticality 0.7, iteration 2, simulation run time: 60000
+516.9434988498688s, criticality 0.7, iteration 3, simulation run time: 60000
+572.1590387821198s, criticality 0.7, iteration 4, simulation run time: 60000
+533.687046289444s, criticality 0.7, iteration 5, simulation run time: 60000
+496.9102592468262s, criticality 0.7, iteration 6, simulation run time: 60000
+592.5527174472809s, criticality 0.7, iteration 7, simulation run time: 60000
+524.5345618724823s, criticality 0.7, iteration 8, simulation run time: 60000
+535.810849905014s, criticality 0.7, iteration 9, simulation run time: 60000
+581.8480472564697s, criticality 0.7, iteration 0, simulation run time: 60000
+594.2509338855743s, criticality 0.7, iteration 1, simulation run time: 60000
+555.5654575824738s, criticality 0.7, iteration 2, simulation run time: 60000
+1120.7244617938995s, criticality 0.7, iteration 3, simulation run time: 60000
+712.4070498943329s, criticality 0.7, iteration 4, simulation run time: 60000
+650.1973071098328s, criticality 0.7, iteration 5, simulation run time: 60000
