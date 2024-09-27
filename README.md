@@ -11,7 +11,7 @@ pip install -r requirements.txt
 ```
 
 # Run 
-```parameters.txt``` includes all parameters and their values that are set as explained in the paper. CPU cycle, bandwidth and data size are downscaled by 10**9. Time is in the order of miliseconds. You can also adjust simulation configuration via following flags:
+```parameters.txt``` includes all parameters and their values that are set as explained in the paper. CPU cycle, bandwidth and data size are downscaled by 10**9. Time budgets are in the order of miliseconds. You can also adjust simulation configuration via following flags:
 
 ```
 --objective
