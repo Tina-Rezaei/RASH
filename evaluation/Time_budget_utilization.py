@@ -1,6 +1,6 @@
 import sys
 sys.path.insert(1, '../core/')
-from Load_tasks import load_tasks
+from Load_tasks import load_tasks_from_csv
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import pandas as pd
@@ -116,23 +116,23 @@ if __name__ == '__main__':
 
     for load in load_list:
         for iteration in range(iterations):
-            path = f'../logs/min_max_p_{load}/tasks/naive/{iteration}/time_slot_11999.csv'
-            path2 = f'../logs/min_max_D_{load}/tasks/naive/{iteration}/time_slot_11999.csv'
+            path = f'../logs/min_max_p_{load}/heuristic/{iteration}/time_slot_11999.csv'
+            path2 = f'../logs/min_max_delay_{load}/heuristic/{iteration}/time_slot_11999.csv'
 
             # RASH
-            compute_tasks, training_tasks = load_tasks(path)
+            compute_tasks, training_tasks = load_tasks_from_csv(path)
             all_tasks = {**compute_tasks, **training_tasks}
             tasks_time_utilization = time_budget_utilization(all_tasks)
             tasks_time_utilization_cps[load] = tasks_time_utilization_cps.get(load, []) + tasks_time_utilization
 
             # MinMaxDelay
-            compute_tasks, training_tasks = load_tasks(path2)
+            compute_tasks, training_tasks = load_tasks_from_csv(path2)
             all_tasks = {**compute_tasks, **training_tasks}
             tasks_time_utilization = time_budget_utilization(all_tasks)
             tasks_time_utilization_naive[load] = tasks_time_utilization_naive.get(load, []) + tasks_time_utilization
 
             # training vs execute
-            compute_tasks, training_tasks = load_tasks(path2)
+            compute_tasks, training_tasks = load_tasks_from_csv(path2)
             all_tasks = {**compute_tasks, **training_tasks}
             training_utilization, execute_utilization = training_vs_execute_utilization(all_tasks)
             training_utilization_total[load] = training_utilization_total.get(load, []) + training_utilization

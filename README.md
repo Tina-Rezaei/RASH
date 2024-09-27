@@ -35,7 +35,7 @@ pip install -r requirements.txt
   Default: 10
 ```
 
-To run the simulation go to core directory and run the following
+To run the simulation go to core directory and run the following:
 ```
 python main.py
 ```

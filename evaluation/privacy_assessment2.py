@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import csv
 
+from collections import Counter
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -179,8 +180,8 @@ def read_data(evaluation_period):
     privacy_score_difference = []
 
     for iteration in range(0, 10):
-        path = f'../logs/min_max_p_1.5/tasks/{dropping_strategy}/{iteration}/time_slot_11999.csv'
-        path2 = f'../logs/min_max_D_1.5/tasks/{dropping_strategy}/{iteration}/time_slot_11999.csv'
+        path = f'../logs/min_max_p_1.5/{dropping_strategy}/{iteration}/time_slot_11999.csv'
+        path2 = f'../logs/min_max_delay_1.5/{dropping_strategy}/{iteration}/time_slot_11999.csv'
 
         total_lost_privacy_1 = 0
         total_lost_privacy_2 = 0
@@ -223,27 +224,9 @@ if __name__ == '__main__':
     total_privacy_scores = 0
     load_list = []
     evaluation_period = {'start': 1 * 0 * 1000, 'end': 1 * 30 * 1000}  # ms (4 minutes)
-    dropping_strategy = 'naive'
+    dropping_strategy = 'heuristic'
 
     privacy_scores_local_min_max, privacy_scores_remote_min_max, privacy_scores_local_min, privacy_scores_remote_min, all_tasks_min_max, all_tasks_min = read_data(evaluation_period)
-
-    from collections import Counter
-
-    # privacy_mapping = {2: 2,
-    #                    3: 3,
-    #                    4: 4,
-    #                    6: 5,
-    #                    8: 6,
-    #                    11: 7,
-    #                    16: 8,
-    #                    24: 9,
-    #                    }
-
-    # for i in range(len(privacy_scores_local_min[1])):
-    #     privacy_scores_local_min[1][i] = privacy_mapping[privacy_scores_local_min[1][i]]
-    #
-    # for i in range(len(privacy_scores_remote_min[1])):
-    #     privacy_scores_remote_min[1][i] = privacy_mapping[privacy_scores_remote_min[1][i]]
 
     print(dict(sorted(Counter(privacy_scores_local_min_max[1]).items())))
     print(Counter(privacy_scores_local_min[1]))
