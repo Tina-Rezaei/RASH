@@ -12,12 +12,14 @@ from Load_tasks import load_and_reset_tasks
 def pars_arguments():
     parser = argparse.ArgumentParser(description="Simulation script for task postponing and optimization.")
     parser.add_argument("--objective", type=str, default='min_max_p', choices=['min_max_p', 'min_max_delay'],
-                        help='Objective function: min_max_p or min_max_delay')
+                        help='Optimization objective function: min_max_p or min_max_delay')
     parser.add_argument('--postponing', type=str, default='heuristic', choices=['heuristic', 'ERAFL_postponing_algo'],
                         help='Postponing strategy: heuristic or ERAFL_postponing_algo')
     parser.add_argument('--mode', type=str, default='pre_generated_tasks', choices=['pre_generated_tasks', 'new_tasks'],
-                        help='Simulation mode: pre_generated_tasks or new_tasks')
+                        help='Simulation mode: "pre_generated_tasks" to use existing tasks or "new_tasks" to generate new tasks')
     parser.add_argument('--iterations', type=int, default=10, help='Number of iterations to run the simulation')
+    parser.add_argument('--deltaT', type=int, default=5, help='The time period over which the decision-making algorithm runs')
+    parser.add_argument('--duration', type=int, default=60, help='Duration of the simulation in seconds.')
 
     return parser.parse_args()
 
@@ -115,9 +117,10 @@ def setup_simulation(params, load):
     args = pars_arguments()
 
     iterations = args.iterations
-    sim_duration = 1 * 60 * 1000  # ms
-    delta_t = 5  # ms
-    max_time_slot = 'time_slot_11999.csv'
+    sim_duration = args.duration * 1000  # convert second to ms
+    delta_t = args.deltaT  # ms
+    max_time_slot = (sim_duration / delta_t) + 1
+    all_tasks_file = f'time_slot_{max_time_slot}.csv'
     initial_load = load * params['comp_rsc']
     target_constant_load = load * params['comp_rsc']  # target load per second
     c_initial_load = (1 / 2) * initial_load
@@ -145,19 +148,19 @@ def setup_simulation(params, load):
         os.makedirs(f'{path_to_save}/{i}', exist_ok=True)
         os.makedirs(f'{path_to_load}/{i}', exist_ok=True)
 
-    return iterations, sim_duration, delta_t, max_time_slot, target_constant_load, c_initial_load, t_initial_load, sim_mode, task_size_factor, path_to_save, path_to_load, training_tasks_ratio, compute_tasks_ratio, postponing_strategies
+    return iterations, sim_duration, delta_t, all_tasks_file, target_constant_load, c_initial_load, t_initial_load, sim_mode, task_size_factor, path_to_save, path_to_load, training_tasks_ratio, compute_tasks_ratio, postponing_strategies
 
 
 if __name__ == '__main__':
 
-    load_list = [1.5]
+    load_list = [0.7, 1, 1.5]
     for load in load_list:
         method_name = 'RASH'
         param_path = './parameters.txt'
         params = read_constant_params(param_path)
         logging_frequency = 1000  # save logs every 1000 time slots
 
-        iterations, sim_duration, delta_t, max_time_slot, target_constant_load, c_initial_load, t_initial_load, sim_mode, task_size_factor, path_to_save, path_to_load, training_tasks_ratio, compute_tasks_ratio, postponing_strategies = setup_simulation(params, load)
+        iterations, sim_duration, delta_t, all_tasks_file, target_constant_load, c_initial_load, t_initial_load, sim_mode, task_size_factor, path_to_save, path_to_load, training_tasks_ratio, compute_tasks_ratio, postponing_strategies = setup_simulation(params, load)
 
         for iteration in range(0, 10):
             start_time = time.time()
@@ -174,7 +177,7 @@ if __name__ == '__main__':
                     # load tasks from the csv file
                     if time_slot == 0:
                         compute_tasks, training_tasks = load_and_reset_tasks(
-                            os.path.join(path_to_load, f'{iteration}', max_time_slot), delta_t)
+                            os.path.join(path_to_load, f'{iteration}', all_tasks_file), delta_t)
                         # add tasks to task queues
                         compute_queue.update(compute_tasks)
                         training_queue.update(training_tasks)
@@ -252,11 +255,11 @@ if __name__ == '__main__':
 
             # write the final log
             save_tasks_report(os.path.join(path_to_save, str(iteration), 'tasks_report.csv'), tasks_report_log)
-            save_model_report(os.path.join(path_to_save, str(iteration), 'rec_usage_summary.csv'), save_model_report)
+            save_model_report(os.path.join(path_to_save, str(iteration), 'rec_usage_summary.csv'), rsc_report_log)
             save_load_report(os.path.join(path_to_save, str(iteration), 'load_history.txt'), load_log)
 
             # save all the tasks and their specs and the model
-            save_tasks({**compute_queue, **training_tasks}, time_slot, current_time, f'{path_to_save}/{iteration}')
+            save_tasks({**compute_queue, **training_tasks}, time_slot, f'{path_to_save}/{iteration}')
             save_model(solved_model, method_name, time_slot, f'{path_to_save}/{iteration}')
 
             end_time = time.time()
