@@ -8,6 +8,7 @@ import numpy as np
 import csv
 import os.path
 
+
 def read_constant_params(path):
     params = dict()
     with open(path) as f:
