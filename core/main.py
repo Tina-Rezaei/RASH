@@ -264,3 +264,4 @@ if __name__ == '__main__':
 
             end_time = time.time()
             log_function(f'{end_time - start_time}, load {load}, iteration {iteration}, simulation run time: {sim_duration}, obj {sim_mode["objective"]}, postponing {sim_mode["postponing"]}')
+
