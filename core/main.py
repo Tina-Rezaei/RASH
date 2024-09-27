@@ -119,7 +119,7 @@ def setup_simulation(params, load):
     iterations = args.iterations
     sim_duration = args.duration * 1000  # convert second to ms
     delta_t = args.deltaT  # ms
-    max_time_slot = (sim_duration / delta_t) + 1
+    max_time_slot = (sim_duration / delta_t) - 1
     all_tasks_file = f'time_slot_{max_time_slot}.csv'
     initial_load = load * params['comp_rsc']
     target_constant_load = load * params['comp_rsc']  # target load per second
@@ -153,7 +153,7 @@ def setup_simulation(params, load):
 
 if __name__ == '__main__':
 
-    load_list = [0.7, 1, 1.5]
+    load_list = [1, 1.5]
     for load in load_list:
         method_name = 'RASH'
         param_path = './parameters.txt'
