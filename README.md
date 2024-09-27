@@ -2,14 +2,16 @@
 
 RASH: Resource Allocation for Smart Homes Considering the Privacy Sensitivity of IoT Applications.
 
-The code developed and tested on Linux. To run it, you need python 3.7+ and Gurobi.
 
-# Run 
-First install dependencies via following:
+# Requirements
+The code developed and tested on Linux. To run it, you need python 3.7+ and Gurobi.
+Install all dependencies via following
 ```
 pip install -r requirements.txt
 ```
-parameters.txt includes all parameters and their values required for initialization that are set as explained in the paper.
+
+# Run 
+```parameters.txt``` includes all parameters and their values that are set as explained in the paper. CPU cycle, bandwidth and data size are downscaled by 10**9. Time is in the order of miliseconds. You can also adjust simulation configuration via following flags:
 
 ```
 --objective
