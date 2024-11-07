@@ -49,3 +49,5 @@ To run the simulation go to core directory and run the following:
 ```
 python main.py
 ```
+
+Results will be stored in ```logs``` directory.
