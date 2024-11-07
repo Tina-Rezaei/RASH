@@ -8,7 +8,6 @@ from decision_making import rash
 from task_generator import *
 from Load_tasks import load_and_reset_tasks
 
-
 def pars_arguments():
     parser = argparse.ArgumentParser(description="Simulation script for task postponing and optimization.")
     parser.add_argument("--objective", type=str, default='min_max_p', choices=['min_max_p', 'min_max_delay'],
@@ -68,25 +67,18 @@ def optimization_executor(c_queue, t_queue, params, iteration, current_time, tim
     for task_id, task_specs in c_queue.items():
         if not task_specs['completed'] and not task_specs['overdue'] and task_specs['arrival_time'] <= current_time:
             c_execution_queue.update({task_id: task_specs})
-
     for task_id, task_specs in t_queue.items():
         if not task_specs['completed'] and not task_specs['overdue'] and task_specs['arrival_time'] <= current_time:
             t_execution_queue.update({task_id: task_specs})
-
     if len(c_execution_queue) == 0 and len(t_execution_queue) == 0:  # no task for execution
         return None, {}, {}
 
     while True:
-        # sys.stdout = open(os.devnull, "w")
-        # sys.stderr = open(os.devnull, "w")
         start = time.time()
         solver_solution, solver_status = rash(params, c_execution_queue, t_execution_queue, sim_mode)
         end = time.time()
         if time_slot % 1000 == 0:
             log_function(f"decision making time: {end - start}")
-        sys.stdout = sys.__stdout__
-        sys.stderr = sys.__stderr__
-
         if solver_status == 'optimal':
             return solver_solution, c_execution_queue, t_execution_queue
 
@@ -113,13 +105,15 @@ def optimization_executor(c_queue, t_queue, params, iteration, current_time, tim
             raise ValueError(f"Unknown postponing strategy: {sim_mode['postponing']}")
 
 
-def setup_simulation(params, load):
+def setup_simulation(load):
     args = pars_arguments()
+    param_path = './parameters.txt'
+    params = read_constant_params(param_path)
 
     iterations = args.iterations
     sim_duration = args.duration * 1000  # convert second to ms
     delta_t = args.deltaT  # ms
-    max_time_slot = (sim_duration / delta_t) - 1
+    max_time_slot = int((sim_duration / delta_t) - 1)
     all_tasks_file = f'time_slot_{max_time_slot}.csv'
     initial_load = load * params['comp_rsc']
     target_constant_load = load * params['comp_rsc']  # target load per second
@@ -128,6 +122,7 @@ def setup_simulation(params, load):
     task_size_factor = 0.008  # determines task size
     training_tasks_ratio = 1/3  # ratio of training tasks when generating new tasks
     compute_tasks_ratio = 2/3  # ratio of compute tasks when generating new tasks
+    logging_frequency = 1000  # save logs every 1000 time slots
 
     postponing_strategies = {
         "heuristic": heuristic_postponing,
@@ -148,19 +143,15 @@ def setup_simulation(params, load):
         os.makedirs(f'{path_to_save}/{i}', exist_ok=True)
         os.makedirs(f'{path_to_load}/{i}', exist_ok=True)
 
-    return iterations, sim_duration, delta_t, all_tasks_file, target_constant_load, c_initial_load, t_initial_load, sim_mode, task_size_factor, path_to_save, path_to_load, training_tasks_ratio, compute_tasks_ratio, postponing_strategies
+    return iterations, sim_duration, delta_t, all_tasks_file, target_constant_load, c_initial_load, t_initial_load, sim_mode, task_size_factor, path_to_save, path_to_load, training_tasks_ratio, compute_tasks_ratio, postponing_strategies, params, logging_frequency
 
 
 if __name__ == '__main__':
 
-    load_list = [1, 1.5]
+    load_list = [0.7]
     for load in load_list:
         method_name = 'RASH'
-        param_path = './parameters.txt'
-        params = read_constant_params(param_path)
-        logging_frequency = 1000  # save logs every 1000 time slots
-
-        iterations, sim_duration, delta_t, all_tasks_file, target_constant_load, c_initial_load, t_initial_load, sim_mode, task_size_factor, path_to_save, path_to_load, training_tasks_ratio, compute_tasks_ratio, postponing_strategies = setup_simulation(params, load)
+        iterations, sim_duration, delta_t, all_tasks_file, target_constant_load, c_initial_load, t_initial_load, sim_mode, task_size_factor, path_to_save, path_to_load, training_tasks_ratio, compute_tasks_ratio, postponing_strategies, params, logging_frequency = setup_simulation(load)
 
         for iteration in range(0, 10):
             start_time = time.time()
@@ -218,7 +209,6 @@ if __name__ == '__main__':
                                                                                        current_time,
                                                                                        time_slot,
                                                                                        sim_mode)
-
                 # calculate handled system load
                 handled_comp_load, handled_bakchaul = calculate_system_load(t_executed_task, c_executed_task, current_time)
                 load_log.append({"total_backhaul_load": total_backhaul_load,

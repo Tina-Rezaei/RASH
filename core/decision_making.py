@@ -1,3 +1,5 @@
+import os
+import sys
 import pyomo.environ as pyo
 from pyomo.environ import *
 from pyomo.opt import TerminationCondition
@@ -142,7 +144,6 @@ def rash(constant_params, compute_tasks, training_tasks, sim_mode):
 
     # maximum privacy-sensitivity score
     max_p = max([value for key, value in t_tasks_privacy_score.items()])
-    print("max_p: ", max_p)
 
     #  variables
     model.F = pyo.Var(model.i, bounds=(0.0001, cpu_cycle_frequency))  # Frequency variables
@@ -226,11 +227,17 @@ def rash(constant_params, compute_tasks, training_tasks, sim_mode):
     opt.options['BarHomogeneous'] = 1
 
     try:
+        # Uncomment the following two lines to see the solver details
+        sys.stdout = open(os.devnull, "w")
+        sys.stderr = open(os.devnull, "w")
+
         # solve the problem
         solver_parameters = "ResultFile=model.ilp"
+        print("solve the model")
         results = opt.solve(instance, tee=True, options_string=solver_parameters)
         # instance.display()
-
+        sys.stdout = sys.__stdout__
+        sys.stderr = sys.__stderr__
         if results.solver.termination_condition == TerminationCondition.infeasible:
             print("---------- INFEASIBLE ---------")
             # solver_model = opt._solver_model()
@@ -239,13 +246,17 @@ def rash(constant_params, compute_tasks, training_tasks, sim_mode):
             print("IIS written to model.ilp")
             # instance.display()
             return instance, results.solver.termination_condition
+
         elif results.solver.termination_condition != TerminationCondition.optimal:
             print("non_optimal")
         # print(results.solver.termination_condition)
         # print(results.solver.status)
         return instance, results.solver.termination_condition
     except Exception as e:
-        print(e)
+        # Enable std out to ses the error
+        sys.stdout = sys.__stdout__
+        sys.stderr = sys.__stderr__
+        print(f'Error raised in decision making \n {e}')
         return instance, e
 
 

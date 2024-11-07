@@ -1,9 +1,6 @@
 comp_rsc,1.0
-comp_rsc_ps,1000
 bandwidth,0.15
-bandwidth_ps,150
 backhaul,0.040
-backhaul_ps,40
 training_data_size_l,0.8
 training_data_size_u,100
 execute_data_size_l,0.008

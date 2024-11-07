@@ -80,7 +80,7 @@ def record_model_report(model, rsc_report_log):
         consumed_comp_rsc = 0
         consumed_backhaul = 0
         consumed_bandwidth = 0
-        print(e)
+        print("error raised her", e)
 
     rsc_report_log.append({"consumed_comp_rsc": consumed_comp_rsc,
                            "consumed_backhaul": consumed_backhaul,

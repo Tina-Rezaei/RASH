@@ -106,7 +106,7 @@ def generate_training_tasks(params, cpu_cycles_budget, current_time, time_chunk,
             continue
 
         if exceeds_cpu_budget(total_comp, required_comp, time_budget, cpu_cycles_budget):
-            break  # Stop if adding this task would exceed the CPU budget
+            continue
 
         # Check if the generated task is computationally feasible either locally or remotely
         if data_size / params['bandwidth'] + required_comp/time_budget + model_size/time_budget > params['comp_rsc'] and data_size / params['bandwidth'] + data_size / params['backhaul'] > time_budget:

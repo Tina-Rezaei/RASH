@@ -5,7 +5,7 @@ RASH: Resource Allocation for Smart Homes Considering the Privacy Sensitivity of
 
 # Requirements
 The code developed and tested on Linux. To run it, you need python 3.7+ and Gurobi.
-You can check [Gurobi website](https://support.gurobi.com/hc/en-us/articles/360044290292-How-do-I-install-Gurobi-for-Python) for instructions on installation. Install all dependencies via following
+You can check [Gurobi website](https://support.gurobi.com/hc/en-us/articles/360044290292-How-do-I-install-Gurobi-for-Python) for instructions on installation. Install all dependencies via following:
 ```
 pip install -r requirements.txt
 ```
