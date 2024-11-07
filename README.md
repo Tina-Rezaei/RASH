@@ -21,7 +21,7 @@ pip install -r requirements.txt
 
 --postponing
   Postponing strategy:
-  Possible values:  naive, ERAFL_postponing_algo, or lbp
+  Possible values:  naive, ERAFL_postponing_algo
   Default: naive
 
 --mode
