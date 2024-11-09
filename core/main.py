@@ -14,7 +14,7 @@ def pars_arguments():
                         help='Optimization objective function: min_max_p or min_max_delay')
     parser.add_argument('--postponing', type=str, default='heuristic', choices=['heuristic', 'ERAFL_postponing_algo'],
                         help='Postponing strategy: heuristic or ERAFL_postponing_algo')
-    parser.add_argument('--mode', type=str, default='pre_generated_tasks', choices=['pre_generated_tasks', 'new_tasks'],
+    parser.add_argument('--mode', type=str, default='new_tasks', choices=['pre_generated_tasks', 'new_tasks'],
                         help='Simulation mode: "pre_generated_tasks" to use existing tasks or "new_tasks" to generate new tasks')
     parser.add_argument('--iterations', type=int, default=10, help='Number of iterations to run the simulation')
     parser.add_argument('--deltaT', type=int, default=5, help='The time period over which the decision-making algorithm runs')
@@ -135,8 +135,8 @@ def setup_simulation(load):
         "objective": args.objective
     }
 
-    path_to_save = f'../logs/{sim_mode["objective"]}_{load}/{sim_mode["postponing"]}'
-    path_to_load = f'../logs/min_max_p_{load}/heuristic'
+    path_to_save = f'../logs/{sim_mode["objective"]}_load{load}/{sim_mode["postponing"]}'
+    path_to_load = f'../logs/{sim_mode["objective"]}_load{load}/{sim_mode["postponing"]}'
 
     # Create necessary directories
     for i in range(iterations):
