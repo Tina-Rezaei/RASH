@@ -10,9 +10,14 @@ You can check [Gurobi website](https://support.gurobi.com/hc/en-us/articles/3600
 pip install -r requirements.txt
 ```
 
-# Run 
-```parameters.txt``` includes all parameters and their values that are set as explained in the paper. CPU cycle, bandwidth and data size are downscaled by 10**9. Time budgets are in the order of miliseconds. You can also adjust simulation configuration via following flags:
+# Run
 
+To run the simulation go to ```core``` directory and run the following:
+```
+cd core 
+python main.py
+```
+Results will be stored in ```logs``` directory. ```parameters.txt``` includes all parameters and their values that are set as explained in the paper. CPU cycle, bandwidth and data size are downscaled by 10**9. Time budgets are in the order of miliseconds. You can also adjust simulation configuration via following flags:
 ```
 --objective
   Objective function:
@@ -44,10 +49,3 @@ pip install -r requirements.txt
   Possible values: an integer
   Default: 5
 ```
-
-To run the simulation go to core directory and run the following:
-```
-python main.py
-```
-
-Results will be stored in ```logs``` directory.
