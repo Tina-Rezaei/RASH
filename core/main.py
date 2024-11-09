@@ -148,7 +148,7 @@ def setup_simulation(load):
 
 if __name__ == '__main__':
 
-    load_list = [0.7]
+    load_list = [0.7]  #  system load to be generated
     for load in load_list:
         method_name = 'RASH'
         iterations, sim_duration, delta_t, all_tasks_file, target_constant_load, c_initial_load, t_initial_load, sim_mode, task_size_factor, path_to_save, path_to_load, training_tasks_ratio, compute_tasks_ratio, postponing_strategies, params, logging_frequency = setup_simulation(load)
@@ -196,7 +196,7 @@ if __name__ == '__main__':
                         #                                          training_queue, task_size_factor)
 
                         save_tasks({**compute_queue, **training_tasks}, time_slot, f'{path_to_save}/{iteration}')
-                        save_model(solved_model, method_name, time_slot, f'{path_to_save}/{iteration}')
+                        # save_model(solved_model, method_name, time_slot, f'{path_to_save}/{iteration}')
                         # add newly generated tasks to task queues
                         compute_queue.update(compute_tasks)
                         training_queue.update(training_tasks)
@@ -250,7 +250,7 @@ if __name__ == '__main__':
 
             # save all the tasks and their specs and the model
             save_tasks({**compute_queue, **training_tasks}, time_slot, f'{path_to_save}/{iteration}')
-            save_model(solved_model, method_name, time_slot, f'{path_to_save}/{iteration}')
+            # save_model(solved_model, method_name, time_slot, f'{path_to_save}/{iteration}')
 
             end_time = time.time()
             log_function(f'{end_time - start_time}, load {load}, iteration {iteration}, simulation run time: {sim_duration}, obj {sim_mode["objective"]}, postponing {sim_mode["postponing"]}')
