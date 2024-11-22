@@ -77,7 +77,6 @@ def optimization_executor(c_queue, t_queue, params, iteration, current_time, tim
     while True:
         start = time.time()
         solver_solution, solver_status = rash(params, c_execution_queue, t_execution_queue, sim_mode)
-        print(solver_solution)
         end = time.time()
         if time_slot % 1000 == 0:
             log_function(f"decision making time: {end - start}")
@@ -92,7 +91,6 @@ def optimization_executor(c_queue, t_queue, params, iteration, current_time, tim
                 return solver_solution, {}, {}
 
         if len(c_execution_queue) + len(t_execution_queue) <= 1:
-            print("no enough tasks", len(c_execution_queue) + len(t_execution_queue) )
             for task_id, task_specs in c_execution_queue.items():
                 c_queue[task_id]["overdue"] = True
             for task_id, task_specs in t_execution_queue.items():
@@ -120,7 +118,7 @@ def setup_simulation():
     max_time_slot = int((sim_duration // delta_t) - 1)
     all_tasks_file = f'time_slot_{max_time_slot}.csv'
     target_constant_load = load * params['comp_rsc']  # target load per second
-    c_load = (1 / 2) * target_constant_load
+    c_load =  target_constant_load
     t_load = 0 * target_constant_load
     task_size_factor = 0.008  # determines task size
     training_tasks_ratio = 1/3  # ratio of training tasks when generating new tasks

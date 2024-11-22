@@ -16,8 +16,10 @@ def is_task_size_sufficient(params, required_comp, time_budget, task_load_factor
 
 def exceeds_cpu_budget(total_comp, required_comp, time_budget, cpu_cycles_budget):
     """check if the total computation exceeds the CPU budget."""
-    return sum(total_comp) + required_comp / time_budget > 1.2 * cpu_cycles_budget
+    return sum(total_comp) + required_comp / time_budget > 1.5 * cpu_cycles_budget
 
+
+import random
 
 def generate_compute_tasks(params, cpu_cycles_budget, current_time, time_chunk, delta_t, compute_queue, task_load_factor):
     if cpu_cycles_budget == 0:
@@ -26,7 +28,18 @@ def generate_compute_tasks(params, cpu_cycles_budget, current_time, time_chunk, 
     total_comp = []
     task_id = max(compute_queue.keys()) + 2 if len(compute_queue) > 0 else 1
 
+    max_attempts = 10000000  # Maximum number of total attempts to prevent infinite loop
+    attempts = 0
+    infeasible_count = 0
+    insufficient_size_count = 0
+    exceeds_budget_count = 0
+
     while True:
+        attempts += 1
+        if attempts > max_attempts:
+            print("Maximum number of attempts reached. Exiting to prevent infinite loop.")
+            break
+
         data_size = random.uniform(params['execute_data_size_l'], params['execute_data_size_u'])
         required_comp = random.uniform(params['execute_required_comp_l'], params['execute_required_comp_u'])
         time_budget = int(random.uniform(params['execute_time_budget_l'], params['execute_time_budget_u']))
@@ -35,45 +48,64 @@ def generate_compute_tasks(params, cpu_cycles_budget, current_time, time_chunk, 
         criticality_score = 0
 
         if not is_task_feasible(params, required_comp, time_budget, data_size):
+            infeasible_count += 1
+            if infeasible_count > max_attempts // 10:
+                print("Too many infeasible tasks. Exiting.")
+                exit()
             continue
+        else:
+            infeasible_count = 0  # Reset counter if condition is not met
 
         if not is_task_size_sufficient(params, required_comp, time_budget, task_load_factor):
+            insufficient_size_count += 1
+            if insufficient_size_count > max_attempts // 10:
+                print("Too many tasks with insufficient size. Exiting.")
+                exit()
             continue
+        else:
+            insufficient_size_count = 0  # Reset counter
 
         if exceeds_cpu_budget(total_comp, required_comp, time_budget, cpu_cycles_budget):
+            exceeds_budget_count += 1
+            if exceeds_budget_count > max_attempts // 10:
+                print("CPU budget exceeded too many times. Exiting.")
+                exit()
             continue
+        else:
+            exceeds_budget_count = 0  # Reset counter
 
-        compute_tasks[task_id] = {'data_size': data_size,
-                                  'untransmitted_data': data_size,
-                                  'data_for_processing': data_size,
-                                  'required_comp': required_comp,
-                                  'remained_comp': required_comp,
-                                  'time_budget': time_budget,
-                                  'remained_time_budget': time_budget,
-                                  'privacy_score': privacy_score,
-                                  'criticality_score': criticality_score,
-                                  'task_type': 'compute',
-                                  'arrival_time': arrival_time,
-                                  'time_slot_arrival': arrival_time // delta_t,
-                                  'alpha': 0,
-                                  'decided': False,
-                                  'overdue': False,
-                                  'completed': False
-                                  }
+        # reset attempts counter since a valid task is found
+        attempts = 0
+
+        compute_tasks[task_id] = {
+            'data_size': data_size,
+            'untransmitted_data': data_size,
+            'data_for_processing': data_size,
+            'required_comp': required_comp,
+            'remained_comp': required_comp,
+            'time_budget': time_budget,
+            'remained_time_budget': time_budget,
+            'privacy_score': privacy_score,
+            'criticality_score': criticality_score,
+            'task_type': 'compute',
+            'arrival_time': arrival_time,
+            'time_slot_arrival': arrival_time // delta_t,
+            'alpha': 0,
+            'decided': False,
+            'overdue': False,
+            'completed': False
+        }
         task_id += 2
-        total_comp.append(required_comp/time_budget)
+        total_comp.append(required_comp / time_budget)
         if sum(total_comp) > cpu_cycles_budget:
-            print(sum(total_comp))
-            print(cpu_cycles_budget)
             total_tasks_count = len(compute_tasks)
             time_slot_chunk = time_chunk / total_tasks_count
             i = 0
             for key, value in compute_tasks.items():
-                arrival_time = current_time + random.uniform(i * time_slot_chunk, (i+1) * time_slot_chunk)
+                arrival_time = current_time + random.uniform(i * time_slot_chunk, (i + 1) * time_slot_chunk)
                 compute_tasks[key]["arrival_time"] = arrival_time
                 compute_tasks[key]["time_slot_arrival"] = arrival_time // delta_t
                 i += 1
-
             return compute_tasks
 
 

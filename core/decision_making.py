@@ -67,7 +67,6 @@ def objective_delay_minimization(model):
 
 
 def rash(constant_params, compute_tasks, training_tasks, sim_mode):
-    print("enter rash")
     bandwidth_budget, backhaul_bandwidth_budget, cpu_cycle_frequency = constant_params['bandwidth'], constant_params['backhaul'], constant_params['comp_rsc']
 
     # all training tasks params
@@ -234,7 +233,6 @@ def rash(constant_params, compute_tasks, training_tasks, sim_mode):
 
         # solve the problem
         solver_parameters = "ResultFile=model.ilp"
-        print("solve the model")
         results = opt.solve(instance, tee=True, options_string=solver_parameters)
         # instance.display()
         sys.stdout = sys.__stdout__
@@ -264,7 +262,6 @@ def rash(constant_params, compute_tasks, training_tasks, sim_mode):
         sys.stderr = sys.__stderr__
         instance.write('infeasible.lp', io_options={'symbolic_solver_labels': True})
         print(f'Error raised in decision making \n {e}')
-        exit()
         return instance, e
 
 
