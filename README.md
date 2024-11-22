@@ -24,6 +24,11 @@ Results will be stored in ```logs``` directory, including detailed log in each t
   Possible values: min_max_p or min_max_delay
   Default: min_max_p
 
+--load
+  System load:
+  Possible values: float
+  Default: 0.7
+  
 --postponing
   Postponing strategy:
   Possible values:  naive, ERAFL_postponing_algo    
