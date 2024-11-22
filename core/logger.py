@@ -1,13 +1,23 @@
 import os
 import csv
 import json
+import shutil
 import pickle
 import pyomo.environ as pyo
-
 
 def log_function(message):
     with open("log.txt", "a") as f:
         f.write(f'{message} \n')
+
+
+
+def create_directories(path, iterations):
+    if os.path.exists(path):
+        shutil.rmtree(path)
+    for i in range(iterations):
+        os.makedirs(f'{path}/{i}', exist_ok=True)
+        os.makedirs(f'{path}/{i}', exist_ok=True)
+
 
 
 def record_tasks_report(c_queue, t_queue, c_execution_queue, t_execution_queue, overdue_tasks_list, time_slot, path, current_time, tasks_report_log):
@@ -122,11 +132,14 @@ def save_model_report(path, rsc_report_log):
 
 
 def save_load_report(path, load_log):
+    if not os.path.exists(path):
+        with open(path, 'w') as f:
+            f.write("total_backhaul_load, total_system_load, handled_load_per_slot\n")
     with open(path, 'a') as f:
         for element in load_log:
             f.write(f'{element["total_backhaul_load"]}, '
                     f'{element["total_system_load"]}, '
-                    f'{element["handled_load_pslot"]}\n')
+                    f'{element["handled_load_per_slot"]}\n')
 
 
 def save_tasks(tasks, time_slot_number, path):
@@ -135,10 +148,9 @@ def save_tasks(tasks, time_slot_number, path):
     :return:
     '''
 
-    if not os.path.exists(os.path.join(path, f'time_slot_{time_slot_number}.csv')):
-        with open(os.path.join(path, f'time_slot_{time_slot_number}.csv'), 'w') as f:
-            f.write(
-                'time slot,task_id,task_type,arrival_time,time_budget,remained_time_budget,required_comp,remained_comp,data_size,untransmitted_data,data_for_processing,privacy_score,decided,completed,overdue,criticality_score,alpha,model_size,epoch,comp_per_bit\n')
+    with open(os.path.join(path, f'time_slot_{time_slot_number}.csv'), 'w') as f:
+        f.write(
+            'time slot,task_id,task_type,arrival_time,time_budget,remained_time_budget,required_comp,remained_comp,data_size,untransmitted_data,data_for_processing,privacy_score,decided,completed,overdue,criticality_score,alpha,model_size,epoch,comp_per_bit\n')
 
     for task_id, task_specs in tasks.items():
         with open(os.path.join(path, f'time_slot_{time_slot_number}.csv'), 'a') as f:

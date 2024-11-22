@@ -3,23 +3,25 @@ import numpy as np
 
 
 def is_task_feasible(params, required_comp, time_budget, data_size):
-    """Check if a generated task is feasible in terms of computation or transmission."""
+    """check if a generated task is feasible in terms of computation or transmission."""
     local_comp_feasible = required_comp / time_budget <= params['comp_rsc']
     remote_transmission_feasible = data_size / params['bandwidth'] + data_size / params['backhaul'] <= time_budget
     return local_comp_feasible or remote_transmission_feasible
 
 
 def is_task_size_sufficient(params, required_comp, time_budget, task_load_factor):
-    """Check if the task's size is above the load threshold."""
+    """check if the task's size is above the load threshold."""
     return required_comp / time_budget >= params['comp_rsc'] * task_load_factor
 
 
 def exceeds_cpu_budget(total_comp, required_comp, time_budget, cpu_cycles_budget):
-    """Check if the total computation exceeds the CPU budget."""
-    return sum(total_comp) + required_comp / time_budget > 1.5 * cpu_cycles_budget
+    """check if the total computation exceeds the CPU budget."""
+    return sum(total_comp) + required_comp / time_budget > 1.2 * cpu_cycles_budget
 
 
 def generate_compute_tasks(params, cpu_cycles_budget, current_time, time_chunk, delta_t, compute_queue, task_load_factor):
+    if cpu_cycles_budget == 0:
+        return {}
     compute_tasks = {}
     total_comp = []
     task_id = max(compute_queue.keys()) + 2 if len(compute_queue) > 0 else 1
@@ -61,6 +63,8 @@ def generate_compute_tasks(params, cpu_cycles_budget, current_time, time_chunk, 
         task_id += 2
         total_comp.append(required_comp/time_budget)
         if sum(total_comp) > cpu_cycles_budget:
+            print(sum(total_comp))
+            print(cpu_cycles_budget)
             total_tasks_count = len(compute_tasks)
             time_slot_chunk = time_chunk / total_tasks_count
             i = 0
@@ -82,6 +86,8 @@ def generate_training_tasks(params, cpu_cycles_budget, current_time, time_chunk,
     :param starting_task_id:
     :return:
     '''
+    if cpu_cycles_budget == 0:
+        return {}
     training_tasks = {}
     total_comp = []
     task_id = max(training_queue.keys()) + 2 if len(training_queue) > 0 else 0

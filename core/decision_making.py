@@ -14,8 +14,7 @@ def constraint_total_bandwidth_auxiliary(model, i):
 
 
 def constraint_total_backhaul_bandwidth(model, backhaul_bandwidth_budget):
-    return pyo.summation(model.bB) <= backhaul_bandwidth_budget
-
+    return sum(model.alpha[i] * model.bB[i] for i in model.i) <= backhaul_bandwidth_budget
 
 def constraint_total_backhaul_auxiliary(model, i):
     return model.bb[i] * model.bB[i] == 1
@@ -68,6 +67,7 @@ def objective_delay_minimization(model):
 
 
 def rash(constant_params, compute_tasks, training_tasks, sim_mode):
+    print("enter rash")
     bandwidth_budget, backhaul_bandwidth_budget, cpu_cycle_frequency = constant_params['bandwidth'], constant_params['backhaul'], constant_params['comp_rsc']
 
     # all training tasks params
@@ -154,12 +154,12 @@ def rash(constant_params, compute_tasks, training_tasks, sim_mode):
 
     model.alpha = pyo.Var(model.i, domain=pyo.Binary)
 
-    model.f = pyo.Var(model.i, bounds=(1 / cpu_cycle_frequency, 1 / 0.0001))  # auxilary variable
+    model.f = pyo.Var(model.i, bounds=(1 / cpu_cycle_frequency, 1 / 0.001))  # auxilary variable
 
-    model.b = pyo.Var(model.i, bounds=(1 / bandwidth_budget, 1 / 0.0001))  # auxilary variable for bandwidth
+    model.b = pyo.Var(model.i, bounds=(1 / bandwidth_budget, 1 / 0.001))  # auxilary variable for bandwidth
 
     model.bb = pyo.Var(model.i,
-                       bounds=(1 / backhaul_bandwidth_budget, 1 / 0.0001))  # auxilary variable for backhaul bandwidth
+                       bounds=(1 / backhaul_bandwidth_budget, 1 / 0.001))  # auxilary variable for backhaul bandwidth
 
     model.r = pyo.Var(model.i, bounds=(0, max_p))
 
@@ -225,6 +225,7 @@ def rash(constant_params, compute_tasks, training_tasks, sim_mode):
     # opt.options['Method'] = 3
     opt.options['logfile'] = 'gurobi.log'
     opt.options['BarHomogeneous'] = 1
+    opt.options['InfUnbdInfo'] = 1
 
     try:
         # Uncomment the following two lines to see the solver details
@@ -244,7 +245,12 @@ def rash(constant_params, compute_tasks, training_tasks, sim_mode):
             # solver_model.computeIIS()
             # solver_model.write("model.ilp")
             print("IIS written to model.ilp")
+            instance.write('infeasible.lp', io_options={'symbolic_solver_labels': True})
             # instance.display()
+            return instance, results.solver.termination_condition
+
+        elif results.solver.termination_condition == TerminationCondition.maxTimeLimit:
+            print("Time limit reached")
             return instance, results.solver.termination_condition
 
         elif results.solver.termination_condition != TerminationCondition.optimal:
@@ -256,7 +262,9 @@ def rash(constant_params, compute_tasks, training_tasks, sim_mode):
         # Enable std out to ses the error
         sys.stdout = sys.__stdout__
         sys.stderr = sys.__stderr__
+        instance.write('infeasible.lp', io_options={'symbolic_solver_labels': True})
         print(f'Error raised in decision making \n {e}')
+        exit()
         return instance, e
 
 

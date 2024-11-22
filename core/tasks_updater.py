@@ -17,8 +17,8 @@ def update_tasks(c_queue, t_queue, c_execution_queue, t_execution_queue, params,
                 c_queue[task_id]['overdue'] = True
                 c_queue[task_id]['remained_time_budget'] = 0
                 overdue_tasks.append(task_id)
-                with open(os.path.join(path, "overdue_log.txt"), 'a') as f:
-                    f.write(f"{time_slot}, {task_id}\n")
+                # with open(os.path.join(path, "overdue_log.txt"), 'a') as f: # log overdue tasks
+                #     f.write(f"{time_slot}, {task_id}\n")
                 # c_queue[task_id]['remained_time_budget'] = 0
 
     for task_id, task_specs in t_queue.items():
@@ -30,8 +30,8 @@ def update_tasks(c_queue, t_queue, c_execution_queue, t_execution_queue, params,
                 t_queue[task_id]['overdue'] = True
                 t_queue[task_id]['remained_time_budget'] = 0
                 overdue_tasks.append(task_id)
-                with open(os.path.join(path, "overdue_log.txt"), 'a') as f:
-                    f.write(f"{time_slot}, {task_id}")
+                # with open(os.path.join(path, "overdue_log.txt"), 'a') as f:  # log overdue tasks
+                #     f.write(f"{time_slot}, {task_id}")
                 # t_queue[task_id]['remained_time_budget'] = 0
 
     # update resources of tasks executed in the last time slot

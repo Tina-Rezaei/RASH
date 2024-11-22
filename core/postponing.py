@@ -69,6 +69,7 @@ def restore_backhaul_tasks(sorted_waiting_queue, postponed_tasks, b_excessive, a
 
 
 def heuristic_postponing(compute_tasks, training_tasks, params, path_to_save, time_slot):
+    print("enter postponi")
     postponed_tasks = []
     waiting_queue = {}
 
