@@ -1,6 +1,6 @@
 import sys
 sys.path.insert(1, '../core/')
-from Load_tasks import load_tasks
+from Load_tasks import load_tasks_from_csv
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import pandas as pd
@@ -33,7 +33,7 @@ def read_comp_load(path, load_period):
 
 def read_data_size(path, load_period):
     data_size = []
-    compute_tasks, training_tasks = load_tasks(path)
+    compute_tasks, training_tasks = load_tasks_from_csv(path)
     all_tasks = {**compute_tasks, **training_tasks}
     for task_is, task_specs in all_tasks.items():
         if load_period["start"] <= int(task_specs["arrival_time"]/5) <= load_period["end"]:
@@ -199,8 +199,8 @@ if __name__ == '__main__':
     iterations = 11
     for ratio in load_list:
         for iteration in range(0, 10):
-            path = f'../logs/min_max_p_{ratio}/tasks/naive/{iteration}'
-            path2 = f'../logs/min_max_D_{ratio}/tasks/naive/{iteration}/'
+            path = f'../logs/min_max_p_{ratio}/heuristic/{iteration}'
+            path2 = f'../logs/min_max_delay_{ratio}/heuristic/{iteration}/'
 
             # ======================= constant load ===========================
             # first path
@@ -217,9 +217,6 @@ if __name__ == '__main__':
             total_tasks_comp_utilization2[ratio] = total_tasks_comp_utilization2.get(ratio, []) + comp
 
 
-            # load = 0
-            # total_load[ratio] = total_load.get(ratio, []) + load
-            # total_load_burst[ratio] = total_load.get(ratio, []) + load
 
     plot_utilization([
         total_tasks_comp_utilization1,

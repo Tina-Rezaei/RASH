@@ -7,7 +7,7 @@ import matplotlib.patches as mpatches
 import sys
 # caution: path[0] is reserved for script path (or '' in REPL)
 sys.path.insert(1, '../core/')
-from Load_tasks import load_tasks
+from Load_tasks import load_tasks_from_csv
 
 
 def criticality_satisfaction(tasks, evaluation_period):
@@ -176,7 +176,7 @@ if __name__ == '__main__':
     execute_utilization_total = {}
 
     criticality_ratio_list = [0.5]
-    naive_postponing = 'naive'
+    naive_postponing = 'heuristic'
     cps_postponing = 'cps'
     load_based_postoning = "lbp"
     load_list = [0.7, 1, 1.5]
@@ -184,13 +184,12 @@ if __name__ == '__main__':
     for load in load_list:
         for iteration in range(0, 10):
             print(load, iteration)
-            path1 = f'../logs/min_max_p_{load}/tasks/{naive_postponing}/{iteration}/{log_file_name}'
-            # if load == 0.7:
-            #     path1 = f'../logs/min_max_p_{load}_test/tasks/{naive_postponing}/{iteration}/{log_file_name}'
-            path2 = f'../logs/min_max_D_{load}/tasks/{naive_postponing}/{iteration}/{log_file_name}'
+            path1 = f'../logs/min_max_p_{load}/{naive_postponing}/{iteration}/{log_file_name}'
 
-            compute_tasks1, training_tasks1 = load_tasks(path1)
-            compute_tasks2, training_tasks2 = load_tasks(path2)
+            path2 = f'../logs/min_max_delay_{load}/{naive_postponing}/{iteration}/{log_file_name}'
+
+            compute_tasks1, training_tasks1 = load_tasks_from_csv(path1)
+            compute_tasks2, training_tasks2 = load_tasks_from_csv(path2)
 
             all_tasks = {**compute_tasks1, **training_tasks1}
             all_tasks2 = {**compute_tasks2, **training_tasks2}
@@ -210,7 +209,7 @@ if __name__ == '__main__':
             execute_satisfaction_minmax_p[load] = values
 
             # training vs execute
-            compute_tasks, training_tasks = load_tasks(path1)
+            compute_tasks, training_tasks = load_tasks_from_csv(path1)
             all_tasks = {**compute_tasks, **training_tasks}
             training_utilization, execute_utilization = training_vs_execute_utilization(all_tasks)
             training_utilization_total[load] = training_utilization_total.get(load, []) + training_utilization

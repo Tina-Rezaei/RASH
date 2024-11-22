@@ -88,42 +88,6 @@ def plot_privacy_sensitivity(privacy_scores_local1, privacy_scores_remote1, priv
     plt.show()
 
 
-# def plot_privacy_sensitivity(privacy_scores_local1, privacy_scores_remote1, privacy_scores_local2, privacy_scores_remote2):
-#     categories = np.arange(2, 10)  # Privacy sensitivity levels
-#
-#     # Count tasks for dataset 1
-#     remote_counts1 = [sum(1 for score in privacy_scores_remote1 if score == sensitivity) for sensitivity in categories]
-#     local_counts1 = [sum(1 for score in privacy_scores_local1 if score == sensitivity) for sensitivity in categories]
-#     total_counts1 = [remote_counts1[i] + local_counts1[i] for i in range(len(remote_counts1))]
-#
-#     # Count tasks for dataset 2
-#     remote_counts2 = [sum(1 for score in privacy_scores_remote2 if score == sensitivity) for sensitivity in categories]
-#     local_counts2 = [sum(1 for score in privacy_scores_local2 if score == sensitivity) for sensitivity in categories]
-#     total_counts2 = [remote_counts2[i] + local_counts2[i] for i in range(len(remote_counts2))]
-#
-#     fig, ax = plt.subplots(figsize=(12, 6))
-#     bar_width = 0.35
-#     x1 = categories - bar_width / 2
-#     x2 = categories + bar_width / 2
-#
-#     # Stacked bars for dataset 1
-#     ax.bar(x1, total_counts1, color='green', width=bar_width,  alpha=0.5, label='Total Tasks - RASH')
-#     ax.bar(x1, remote_counts1, color='red', width=bar_width,  alpha=0.5, label='Remote Tasks - RASH')
-#
-#     # Stacked bars for dataset 2
-#     ax.bar(x2, total_counts2, color='blue', width=bar_width,  alpha=0.5, label='Total Tasks - MinmaxD')
-#     ax.bar(x2, remote_counts2, color='orange', width=bar_width,  alpha=0.5, label='Remote Tasks - MinmaxD')
-#
-#     plt.xlabel('Privacy Sensitivity Level', fontsize=18)
-#     plt.ylabel('Number of Tasks', fontsize=18)
-#     plt.xticks(categories, fontsize=14)
-#     plt.yticks(fontsize=14)
-#     ax.set_ylim(0, max(max(total_counts1), max(total_counts2)) * 1.1)
-#     ax.legend(fontsize=14, ncol=2, fancybox=True, loc='upper center', framealpha=0.7, mode= "expand")
-#     plt.savefig("privacy_assessment_modified.pdf", format="pdf", bbox_inches='tight')
-#     plt.show()
-
-
 def plot_privacy_sensitivity_with_line(privacy_scores_local1, privacy_scores_remote1, privacy_scores_local2, privacy_scores_remote2, all_tasks_min_max, all_tasks_min):
     categories = np.arange(2, 10)  # Privacy sensitivity levels
 
@@ -212,8 +176,7 @@ def read_data(evaluation_period):
                     if row['overdue'] != "False" or row['completed'] != "False":
                         all_tasks_min[1].append(float(row['privacy_score']))
         privacy_score_difference.append(total_lost_privacy_2 - total_lost_privacy_1)
-    plt.boxplot(privacy_score_difference)
-    plt.show()
+
     return privacy_scores_local_min_max, privacy_scores_remote_min_max, privacy_scores_local_min, privacy_scores_remote_min, all_tasks_min_max, all_tasks_min
 
 

@@ -1,6 +1,6 @@
 import sys
 sys.path.insert(1, '../core/')
-from Load_tasks import load_tasks
+from Load_tasks import load_tasks_from_csv
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import pandas as pd
@@ -34,7 +34,7 @@ def read_comp_load(path, load_period):
 
 def read_data_size(path, load_period):
     data_size = []
-    compute_tasks, training_tasks = load_tasks(path)
+    compute_tasks, training_tasks = load_tasks_from_csv(path)
     all_tasks = {**compute_tasks, **training_tasks}
     for task_is, task_specs in all_tasks.items():
         if load_period["start"] <= int(task_specs["arrival_time"]/5) <= load_period["end"]:
@@ -68,7 +68,7 @@ def time_budget_utilization(tasks, evaluation_period):
         if evaluation_period['start'] <= int(task_specs['arrival_time']) <= evaluation_period['end']:
             print(evaluation_period)
             # if task_specs['completed'] == True and task_specs['criticality_score'] == 1:
-            if task_specs['completed'] == True:
+            if task_specs['completed']:
                 if task_specs['remained_time_budget'] > 0:
                     total_tasks_time_utilization.append((task_specs['time_budget'] - task_specs['remained_time_budget'])/task_specs['time_budget'])
                 else:
@@ -200,8 +200,8 @@ if __name__ == '__main__':
             time = [i*5 for i in range(11999)]
             baseline_utilization = []
             proposal_utilization = []
-            path = f'../logs/min_max_p_{ratio}/tasks/naive/{iteration}/'
-            path2 = f'../logs/min_max_D_{ratio}/tasks/naive/{iteration}/'
+            path = f'../logs/min_max_p_{ratio}/heuristic/{iteration}/'
+            path2 = f'../logs/min_max_delay_{ratio}/heuristic/{iteration}/'
 
             # first path
             # computation load data

@@ -7,7 +7,7 @@ import matplotlib.patches as mpatches
 import sys
 # caution: path[0] is reserved for script path (or '' in REPL)
 sys.path.insert(1, '../core/')
-from Load_tasks import load_tasks
+from Load_tasks import load_tasks_from_csv
 
 
 def criticality_satisfaction(tasks, evaluation_period):
@@ -173,13 +173,13 @@ if __name__ == '__main__':
     for load in load_list:
         for iteration in range(0, 10):
             print(load, iteration)
-            path1 = f'../logs/min_max_p_{load}/tasks/{naive_postponing}/{iteration}/{log_file_name}'
-            if load == 0.7:
-                path1 = f'../logs/min_max_p_{load}_test/tasks/{naive_postponing}/{iteration}/{log_file_name}'
-            path2 = f'../logs/min_max_D_{load}/tasks/{naive_postponing}/{iteration}/{log_file_name}'
+            path1 = f'../logs/min_max_p_{load}/heuristic/{iteration}/{log_file_name}'
+            # if load == 0.7:
+            #     path1 = f'../logs/min_max_p_{load}_test/tasks/{naive_postponing}/{iteration}/{log_file_name}'
+            path2 = f'../logs/min_max_delay_{load}/heuristic/{iteration}/{log_file_name}'
 
-            compute_tasks_naive, training_tasks_naive = load_tasks(path1)
-            compute_tasks_cps, training_tasks_cps = load_tasks(path2)
+            compute_tasks_naive, training_tasks_naive = load_tasks_from_csv(path1)
+            compute_tasks_cps, training_tasks_cps = load_tasks_from_csv(path2)
 
             all_tasks = {**compute_tasks_naive, **training_tasks_naive}
             all_tasks2 = {**compute_tasks_cps, **training_tasks_cps}
@@ -215,11 +215,3 @@ if __name__ == '__main__':
                   'MinMaxDelay',
                   'Satisfaction ratio (%)',
                   'Satisfaction_ratio')
-
-    # group_box_plot([
-    #     training_satisfaction_minmax_p,
-    #     execute_satisfaction_minmax_p,
-    # ], 'Training',
-    #               'Execute',
-    #               'Satisfaction ratio (%)',
-    #               'Satisfaction_Training_vs_execute')
