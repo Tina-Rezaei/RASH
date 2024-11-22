@@ -31,7 +31,7 @@ Results will be stored in ```logs``` directory, including detailed log in each t
   
 --postponing
   Postponing strategy:
-  Possible values:  naive, ERAFL_postponing_algo    
+  Possible values:  heuristic_postponing, ERAFL_postponing_algo    
   Default: naive
 
 --mode

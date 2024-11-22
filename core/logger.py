@@ -74,17 +74,17 @@ def record_tasks_report(c_queue, t_queue, c_execution_queue, t_execution_queue, 
     return tasks_report_log
 
 
-def record_model_report(model, rsc_report_log):
+def record_model_report(solver_solution, rsc_report_log):
     consumed_comp_rsc = 0
     consumed_backhaul = 0
     consumed_bandwidth = 0
     try:
-        for task_id in model.i:
-            consumed_bandwidth += pyo.value(model.B[task_id])
-            if pyo.value(model.alpha[task_id]) < 0.5:  # when alpha is zero, local execution
-                consumed_comp_rsc += pyo.value(model.F[task_id])
+        for task_id in solver_solution.i:
+            consumed_bandwidth += pyo.value(solver_solution.B[task_id])
+            if pyo.value(solver_solution.alpha[task_id]) < 0.5:  # when alpha is zero, local execution
+                consumed_comp_rsc += pyo.value(solver_solution.F[task_id])
             else:  # when alpha is one, remote execution
-                consumed_backhaul += pyo.value(model.bB[task_id])
+                consumed_backhaul += pyo.value(solver_solution.bB[task_id])
 
     except Exception as e:
         consumed_comp_rsc = 0

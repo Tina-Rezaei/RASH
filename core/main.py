@@ -115,8 +115,6 @@ def setup_simulation():
     iterations = args.iterations
     sim_duration = args.duration * 1000  # convert second to ms
     delta_t = args.deltaT * 1000 # ms
-    max_time_slot = int((sim_duration // delta_t) - 1)
-    all_tasks_file = f'time_slot_{max_time_slot}.csv'
     target_constant_load = load * params['comp_rsc']  # target load per second
     c_load =  target_constant_load
     t_load = 0 * target_constant_load
@@ -124,6 +122,8 @@ def setup_simulation():
     training_tasks_ratio = 1/3  # ratio of training tasks when generating new tasks
     compute_tasks_ratio = 2/3  # ratio of compute tasks when generating new tasks
     logging_frequency = 1  # save logs every 1000 time slots
+    max_time_slot = int((sim_duration // delta_t) - 1)
+    all_tasks_file = f'time_slot_{max_time_slot}.csv'
 
     postponing_strategies = {
         "heuristic": heuristic_postponing,
@@ -147,7 +147,10 @@ def setup_simulation():
 
 if __name__ == '__main__':
 
-    load, iterations, sim_duration, delta_t, all_tasks_file, target_constant_load, c_load, t_load, sim_mode, task_size_factor, path_to_save, path_to_load, training_tasks_ratio, compute_tasks_ratio, postponing_strategies, params, logging_frequency = setup_simulation()
+    (load, iterations, sim_duration, delta_t, all_tasks_file,
+     target_constant_load, c_load, t_load, sim_mode, task_size_factor,
+     path_to_save, path_to_load, training_tasks_ratio, compute_tasks_ratio,
+     postponing_strategies, params, logging_frequency) = setup_simulation()
 
     method_name = 'RASH'
 
@@ -195,7 +198,6 @@ if __name__ == '__main__':
                     #                                          training_queue, task_size_factor)
 
                     save_tasks({**compute_queue, **training_tasks}, time_slot, f'{path_to_save}/{iteration}')
-                    # save_model(solved_model, method_name, time_slot, f'{path_to_save}/{iteration}')
                     # add newly generated tasks to task queues
                     compute_queue.update(compute_tasks)
                     training_queue.update(training_tasks)
@@ -250,7 +252,6 @@ if __name__ == '__main__':
 
         # save all the tasks and their specs and the model
         save_tasks({**compute_queue, **training_tasks}, time_slot, f'{path_to_save}/{iteration}')
-        # save_model(solved_model, method_name, time_slot, f'{path_to_save}/{iteration}')
 
         end_time = time.time()
         log_function(f'{end_time - start_time}, load {load}, iteration {iteration}, simulation run time: {sim_duration}, obj {sim_mode["objective"]}, postponing {sim_mode["postponing"]}')
